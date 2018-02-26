@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 })->name('welcom');
 
 Route::get('index','OnlinecabbookingController@index')->name('index');
