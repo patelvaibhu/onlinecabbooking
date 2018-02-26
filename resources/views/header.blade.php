@@ -10,49 +10,49 @@
         <!--Header-Upper-->
         <div class="header-upper">
             <div class="auto-container">
-                <div class="clearfix">
+                {{--<div class="clearfix">--}}
 
-                    <div class="logo-outer">
-                        <div class="logo"><a href="index"><img src="asset/images/logo7.png" alt="Valencia" title="Valencia"></a></div>
-                    </div>
+                    {{--<div class="logo-outer">--}}
+                        {{--<div class="logo"><a href="index"><img src="asset/images/logo7.png" alt="Valencia" title="Valencia"></a></div>--}}
+                    {{--</div>--}}
 
-                    <div class="upper-right clearfix">
+                    {{--<div class="upper-right clearfix">--}}
 
-                        <!--Info Box-->
-                        <div class="info-box">
-                            <div class="icon-box"><span class="flaticon-buildings"></span></div>
-                            <ul>
-                                <li><strong>Visit Us:</strong></li>
-                                <li>123A, Mainbridge, USA</li>
-                            </ul>
-                        </div>
+                        {{--<!--Info Box-->--}}
+                        {{--<div class="info-box">--}}
+                            {{--<div class="icon-box"><span class="flaticon-buildings"></span></div>--}}
+                            {{--<ul>--}}
+                                {{--<li><strong>Visit Us:</strong></li>--}}
+                                {{--<li>123A, Mainbridge, USA</li>--}}
+                            {{--</ul>--}}
+                        {{--</div>--}}
 
-                        <!--Info Box-->
-                        <div class="info-box">
-                            <div class="icon-box"><span class="flaticon-technology-5"></span></div>
-                            <ul>
-                                <li><strong>Call Us:</strong></li>
-                                <li>+1800 - 2374 - 1900</li>
-                            </ul>
-                        </div>
+                        {{--<!--Info Box-->--}}
+                        {{--<div class="info-box">--}}
+                            {{--<div class="icon-box"><span class="flaticon-technology-5"></span></div>--}}
+                            {{--<ul>--}}
+                                {{--<li><strong>Call Us:</strong></li>--}}
+                                {{--<li>+1800 - 2374 - 1900</li>--}}
+                            {{--</ul>--}}
+                        {{--</div>--}}
 
-                        <div class="info-box">
-                            <div class="icon-box"><span class="flaticon-envelope"></span></div>
-                            <ul>
-                                <li><strong>Mail Us:</strong></li>
-                                <li>valencia@support.com</li>
-                            </ul>
-                        </div>
+                        {{--<div class="info-box">--}}
+                            {{--<div class="icon-box"><span class="flaticon-envelope"></span></div>--}}
+                            {{--<ul>--}}
+                                {{--<li><strong>Mail Us:</strong></li>--}}
+                                {{--<li>valencia@support.com</li>--}}
+                            {{--</ul>--}}
+                        {{--</div>--}}
 
-                        <div class="info-box btn-box">
-                            <a href="booking" class="theme-btn">Bookings</a>
-                        </div>
+                        {{--<div class="info-box btn-box">--}}
+                            {{--<a href="booking" class="theme-btn">Bookings</a>--}}
+                        {{--</div>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                </div>
-            </div>
-        </div>
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
         <!--Header-Lower-->
         <div class="header-lower">
 
