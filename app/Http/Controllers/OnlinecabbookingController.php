@@ -73,6 +73,10 @@ class OnlinecabbookingController extends Controller
     {
         return view('order');
     }
+    public function neworder()
+    {
+        return view('neworder');
+    }
 
     /**
      * Store a newly created resource in storage.

@@ -44,6 +44,11 @@
     <link rel="stylesheet" type="text/css" href="asset/login/css/util.css">
     <link rel="stylesheet" type="text/css" href="asset/login/css/main.css">
     <!--===============================================================================================-->
+    {{--<link href="book/css/style.css" rel="stylesheet" type="text/css" media="all">--}}
+    {{--<link href="book/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />--}}
+    {{--<link rel="stylesheet" href="book/css/jquery-ui.css" />--}}
+
+    <!--===============================================================================================-->
 
 </head>
 

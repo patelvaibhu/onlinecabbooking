@@ -31,11 +31,12 @@ img{max-width:100%;}
 body{
 	font-family: 'Amaranth', sans-serif;
 }
-body {
-    background:url(asset/images/book/car.jpg);
-    background-size: cover;
-	text-align:center;
-}
+/*body {*/
+	/*background-color: #000000;*/
+	/*background:url('/asset/images/book/car.jpg');*/
+    /*background-size: cover;*/
+	/*text-align:center;*/
+/*}*/
 /*--header--*/
 .header h1 {
     font-size: 3em;
@@ -70,7 +71,7 @@ span {
     margin-right: 10px;
 	color: #2baf2b;
 }
-.book-form input[type="text"], .book-form input[type="email"] {
+.book-form input[type="text"], .book-form input[type="email"] , .book-form input[type="date"]{
     width: 92%;
     outline: none;
     font-size: 0.9em;
@@ -88,10 +89,10 @@ span {
 .book-form input[type="text"], .book-form input[type="text"] {
 	color: #bbb9b9;
 }
-.book-form input[type="date"], .book-form input[type="date"]{
-	color: #bbb9b9;
+/*.book-form input[type="text"], .book-form input[type="date"] {*/
+	/*color: #bbb9b9;*/
 
-}
+/*}*/
 .book-form form input[type="submit"] {
     text-transform: uppercase;
     background: #fd5c63;

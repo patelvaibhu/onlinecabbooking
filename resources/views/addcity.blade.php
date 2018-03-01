@@ -18,8 +18,8 @@
 
     <!-- //css files -->
 </head>
-<body>
-<h1>Sports Camp Registration Form</h1>
+<body style="background-image: url('admin/city/images/city.jpg')">
+<h1>City</h1>
 <div class="w3l-main">
     <div class="w3l-from">
         <form action="#" method="post">
@@ -56,11 +56,12 @@
                 </div>
             </div>
             <div class="w3l-sym">
-                <label class="head">TRAVEL TYPE<span class="w3l-star"> * </span></label>
-                <input type="text" name="State" placeholder="" required="">
+                <label class="head"  style=" margin: 0px -150px 10px">TRAVEL TYPE<span class="w3l-star"> * </span></label>
+                <input type="text" name="State" placeholder="" required=" "    style=" margin: 0px -150px 10px;">
             </div>
+
                 <div class="btn">
-                    <input type="submit" name="submit" value="Submit"/>
+                    <input type="submit" name="submit" value="Submit" style="background-color: #0a0a0a ;"/>
                 </div>
 
             <div class="clear"></div>

@@ -37,8 +37,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                    <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                    <li class="active"><a href="adminindex"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                    {{--<li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>--}}
                 </ul>
             </li>
             <li class="treeview">
@@ -62,7 +62,7 @@
             </span>
                 </a> <ul class="treeview-menu">
                     {{--<li><a href="admin/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>--}}
-                    <li><a href="plan"><i class="fa fa-circle-o"></i>Info</a></li>
+                    <li><a href="plan"><i class="fa fa-circle-o"></i>plan</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -77,7 +77,6 @@
                     <li><a href="order"><i class="fa fa-circle-o"></i>Info</a></li>
                 </ul>
             </li>
-
 
         </ul>
 

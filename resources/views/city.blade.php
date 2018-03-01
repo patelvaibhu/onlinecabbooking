@@ -43,7 +43,6 @@
                                     <th>TRAVEL TYPE</th>
                                 </tr>
                                 </thead>
-                                @for($i=0;$i<5;$i++)
                                 <tbody>
                                 <tr>
                                     <td>Trident</td>
@@ -58,7 +57,7 @@
                                     <td> <i class="fa fa-trash"></i></td>
                                 </tr>
                                 </tbody>
-                                @endfor
+                                {{--@endfor--}}
                                     <tfoot>
 
                                 <tr>

@@ -2,10 +2,9 @@
 
 @section('content')
 
-    <!DOCTYPE html>
     <html lang="en">
     <head>
-        <title>Cab Booking Form Responsive Widget Template :: W3layouts</title>
+        <title>Cab Booking</title>
         <!-- Meta tag Keywords -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -18,6 +17,7 @@
         <!-- Meta tag Keywords -->
 
         <!-- css files -->
+        <link rel="stylesheet" type="text/css" href="asset/login/vendor/bootstrap/css/bootstrap.min.css">
         <link href="book/css/style.css" rel="stylesheet" type="text/css" media="all">
         <link href="book/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
         <link rel="stylesheet" href="book/css/jquery-ui.css" />
@@ -27,7 +27,7 @@
         <link href="//fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i" rel="stylesheet">
         <!--//online-fonts -->
     </head>
-    <body>
+    <body style="background-image: url('asset/images/book/car.jpg')">
     <div class="w3-container w3-center w3-animate-zoom">
 
     <div class="header">

@@ -14,7 +14,7 @@
 
 Route::get('/', function () {
     return view('index');
-})->name('welcom');
+})->name('welcome');
 
 Route::get('index','OnlinecabbookingController@index')->name('index');
 
@@ -39,3 +39,5 @@ Route::get('plan','OnlinecabbookingController@plan')->name('plan');
 Route::get('order','OnlinecabbookingController@order')->name('order');
 
 Route::get('addcity','OnlinecabbookingController@addcity')->name('addcity');
+
+Route::get('neworder','OnlinecabbookingController@neworder')->name('neworder');
