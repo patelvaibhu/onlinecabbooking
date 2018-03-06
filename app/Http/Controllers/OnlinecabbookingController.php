@@ -53,8 +53,13 @@ class OnlinecabbookingController extends Controller
     {
 
         return view('adminindex');
-
+//        return view('admin');
     }
+    public function user()
+    {
+        return view('user');
+    }
+
     public function city()
     {
         //dd('tets');
@@ -69,6 +74,11 @@ class OnlinecabbookingController extends Controller
         return view('plan');
     }
 
+    public function driver()
+    {
+        return view('driver');
+    }
+
     public function order()
     {
         return view('order');
@@ -76,6 +86,24 @@ class OnlinecabbookingController extends Controller
     public function neworder()
     {
         return view('neworder');
+    }
+
+    public function car()
+    {
+        return view('car');
+    }
+    public function inquiry()
+    {
+        return view('inquiry');
+    }
+    public function passenger()
+    {
+        return view('passenger');
+    }
+
+    public function payment()
+    {
+        return view('payment');
     }
 
     /**

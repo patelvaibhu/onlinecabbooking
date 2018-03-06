@@ -1,7 +1,6 @@
 @extends('adminmain')
 
 
-
 @section('content')
 
 
@@ -11,7 +10,8 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Data Tables
+                <i class="fa  fa-industry"></i>
+                City
                 <small>advanced tables</small>
             </h1>
             <ol class="breadcrumb">

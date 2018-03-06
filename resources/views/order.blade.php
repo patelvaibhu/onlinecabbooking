@@ -11,6 +11,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
+                <i class=" glyphicon glyphicon-shopping-cart"></i>
                 Order
                 <small>advanced tables</small>
             </h1>

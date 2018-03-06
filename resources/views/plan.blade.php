@@ -11,7 +11,8 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                PLAN TABLE
+                <i class="fa fa-file-text-o"></i>
+                Plan
                 <small>advanced tables</small>
             </h1>
             <ol class="breadcrumb">

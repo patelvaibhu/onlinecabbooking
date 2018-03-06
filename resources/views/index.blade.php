@@ -27,7 +27,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><div class="small-title">Welcome to Valencia Car Hire</div> </div>
+                         data-endeasing="Power4.easeIn"><div class="small-title">Welcome to Cab Booking</div> </div>
 
                     <div class="tp-caption sfl sfb tp-resizeme"
                          data-x="center" data-hoffset="0"

@@ -30,6 +30,7 @@
 
     <!-- DataTables -->
     <link rel="stylesheet" href="admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="admin/dist/js/jquery.min.js">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -56,7 +57,7 @@
 
 
 <!-- jQuery 3 -->
-<script src="admin/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="admin/dist/js/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="admin/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -94,7 +95,6 @@
 <script src="admin/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="admin/dist/js/demo.js"></script>
-
 
 @yield('js')
 </html>

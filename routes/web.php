@@ -41,3 +41,15 @@ Route::get('order','OnlinecabbookingController@order')->name('order');
 Route::get('addcity','OnlinecabbookingController@addcity')->name('addcity');
 
 Route::get('neworder','OnlinecabbookingController@neworder')->name('neworder');
+
+Route::get('driver','OnlinecabbookingController@driver')->name('driver');
+
+Route::get('car','OnlinecabbookingController@car')->name('car');
+
+Route::get('inquiry','OnlinecabbookingController@inquiry')->name('inquiry');
+
+Route::get('passenger','OnlinecabbookingController@passenger')->name('passenger');
+
+Route::get('payment','OnlinecabbookingController@payment')->name('payment');
+
+Route::get('user','OnlinecabbookingController@user')->name('user');

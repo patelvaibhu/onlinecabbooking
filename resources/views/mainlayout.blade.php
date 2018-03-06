@@ -5,7 +5,7 @@
 <!-- Mirrored from wp1.themexlab.com/2017/valencia/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2017 10:33:44 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Valencia - Car Hire HTML Template | Homepage One</title>
+    <title>Advance-CAB-Booking</title>
     <!-- Stylesheets -->
     <link href="{{asset('asset/css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{asset('asset/css/revolution-slider.css')}}" rel="stylesheet">

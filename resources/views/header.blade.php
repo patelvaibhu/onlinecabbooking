@@ -13,7 +13,7 @@
                 <div class="clearfix">
 
                     <div class="logo-outer">
-                        <div class="logo"><a href="index"><img src="asset/images/logo7.png" alt="Valencia" title="Valencia"></a></div>
+                        <div class="logo"><a href="index"><img src="asset/images/logo7.png" alt="AdvanceCabBooking" title="Cab Booking"></a></div>
                     </div>
 
                     <div class="upper-right clearfix">
