@@ -49,8 +49,6 @@
 
 @include('sidebar')
 
-@include('admindashboard')
-
 @yield('content')
 
 </body>
@@ -95,6 +93,14 @@
 <script src="admin/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="admin/dist/js/demo.js"></script>
+
+<!-- addcity -->
+<!-- Default-JavaScript -->
+<script type="text/javascript" src="admin/city/js/jquery-2.1.4.min.js"></script>
+
+<script src="admin/city/js/jquery-ui.js"></script>
+<!--  end addcity -->
+
 
 @yield('js')
 </html>

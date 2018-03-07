@@ -59,6 +59,26 @@ class OnlinecabbookingController extends Controller
     {
         return view('user');
     }
+    public function adminuser()
+    {
+        return view('adminuser');
+    }
+
+    public function newcar()
+    {
+        return view('newcar');
+    }
+
+    public function admininquiry()
+    {
+        return view('admininquiry');
+    }
+
+    public function adddriver()
+    {
+        return view('adddriver');
+    }
+
 
     public function city()
     {
@@ -74,9 +94,19 @@ class OnlinecabbookingController extends Controller
         return view('plan');
     }
 
+    public function addpayment()
+    {
+        return view('addpayment');
+    }
+
     public function driver()
     {
         return view('driver');
+    }
+
+    public function newpassenger()
+    {
+        return view('newpassenger');
     }
 
     public function order()

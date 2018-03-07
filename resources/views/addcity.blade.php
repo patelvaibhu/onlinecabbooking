@@ -68,9 +68,7 @@
         </form>
     </div>
 </div>
-<!-- Default-JavaScript --> <script type="text/javascript" src="admin/city/js/jquery-2.1.4.min.js"></script>
 <!-- Calendar -->
-<script src="admin/city/js/jquery-ui.js"></script>
 <script>
     $(function() {
         $( "#datepicker,#datepicker1" ).datepicker();

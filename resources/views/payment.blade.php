@@ -29,7 +29,7 @@
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
 
-                            <a href="addcity"><button type="button" class="btn">Add</button></a>
+                            <a href="addpayment"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
                                 <th>CAR_TYPE</th>

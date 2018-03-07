@@ -67,15 +67,7 @@
                             </div>
                             <div class="clear"> </div>
                         </div>
-                            {{--<div class="form-date-w3-agileits">--}}
-                            {{--<div class="form-agileits">--}}
-                            {{--<label>Pickup Date :</label>--}}
-                            {{--</div>--}}
-                            {{--<div class="form-agileits-2">--}}
-                            {{--<input type="date" style="background-color:black ; border-color: #ffffff ; width: 90%;  height: auto;" id="datepicker" name="pickup_date" value="yyyy/mm/dd" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">--}}
-                            {{--</div>--}}
-                            {{--<div class="clear"> </div>--}}
-                            {{--</div>--}}
+
                             <div class="form-date-w3-agileits">
                                 <div class="form-agileits">
                                     <label> Pickup Address :</label>
@@ -144,5 +136,5 @@
             <div class="clear"> </div>
         </div>
     </div>
-</>
+</div>
 </body>

@@ -53,3 +53,15 @@ Route::get('passenger','OnlinecabbookingController@passenger')->name('passenger'
 Route::get('payment','OnlinecabbookingController@payment')->name('payment');
 
 Route::get('user','OnlinecabbookingController@user')->name('user');
+
+Route::get('adminuser','OnlinecabbookingController@adminuser')->name('adminuser');
+
+Route::get('newcar','OnlinecabbookingController@newcar')->name('newcar');
+
+Route::get('admininquiry','OnlinecabbookingController@admininquiry')->name('admininquiry');
+
+Route::get('adddriver','OnlinecabbookingController@adddriver')->name('adddriver');
+
+Route::get('newpassenger','OnlinecabbookingController@newpassenger')->name('newpassenger');
+
+Route::get('addpayment','OnlinecabbookingController@addpayment')->name('addpayment');

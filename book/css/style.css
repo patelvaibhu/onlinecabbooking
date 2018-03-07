@@ -84,10 +84,13 @@ span {
     font-family: 'Amaranth', sans-serif;
 }
 .book-form input[type="text"], .book-form input[type="email"]{
-	color: #fff;
+	color:#fff;
 }
 .book-form input[type="text"], .book-form input[type="text"] {
 	color: #bbb9b9;
+}
+.book-form input[type="date"], .book-form input[type="date"] {
+	color:#fff;
 }
 /*.book-form input[type="text"], .book-form input[type="date"] {*/
 	/*color: #bbb9b9;*/
