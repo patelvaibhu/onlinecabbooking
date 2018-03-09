@@ -71,7 +71,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><div class="small-title">No. 1 Car Rental / Hire Company</div> </div>
+                         data-endeasing="Power4.easeIn"><div class="small-title">Enjoy your Ride with Advance CAB Booking</div> </div>
 
                     <div class="tp-caption sfr sfb tp-resizeme"
                          data-x="left" data-hoffset="15"
@@ -97,7 +97,7 @@
                          data-elementdelay="0.01"
                          data-endelementdelay="0.3"
                          data-endspeed="1200"
-                         data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-one">Rent a Car</a></div>
+                         data-endeasing="Power4.easeIn"><a href="booking" class="theme-btn btn-style-one">Booking Now</a></div>
 
                 </li>
 
@@ -146,6 +146,7 @@
                 </li>
 
             </ul>
+
         </div>
     </div>
 </section>

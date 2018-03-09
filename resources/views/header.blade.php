@@ -23,7 +23,7 @@
                             <div class="icon-box"><span class="flaticon-buildings"></span></div>
                             <ul>
                                 <li><strong>Visit Us:</strong></li>
-                                <li>123A, Mainbridge, USA</li>
+                                <li>Vadodara,Gujarat</li>
                             </ul>
                         </div>
 
@@ -40,7 +40,7 @@
                             <div class="icon-box"><span class="flaticon-envelope"></span></div>
                             <ul>
                                 <li><strong>Mail Us:</strong></li>
-                                <li>valencia@support.com</li>
+                                <li>advancecabbooking@.com</li>
                             </ul>
                         </div>
 
@@ -96,7 +96,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="contactus">Contact</a></li>
-                                <li><a href="login">login</a></li>
+                                <li><a href="adminlogin">login</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -138,7 +138,7 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">Home Kari</a>
+                                <li class="current dropdown"><a href="#">Home </a>
                                     <ul>
                                         <li><a href="index">Homepage One</a></li>
                                         {{--<li><a href="index-2.html">Homepage Two</a></li>--}}
@@ -163,7 +163,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="contactus">Contact</a></li>
-                                <li><a href="{{Route('login')}}">login</a></li>
+                                <li><a href="{{Route('adminlogin')}}">login</a></li>
 
                             </ul>
                         </div>

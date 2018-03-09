@@ -91,37 +91,37 @@
                 <div class="tabs-container tabs-content">
 
                     <!--Tab / Active Tab-->
-                    <div class="tab active-tab" id="prod-description">
-                        <div class="content">
-                            <h3>Vehicle Overview</h3>
-                            <p>The weather started getting rough the tiny ship was lost the min ting a maximum security road and back stock a against ade lost the minnow weather started getting rough the tiny ship was lost the min ting a maximum security road and back stock a against ade lost the minnow the min ting a maximum security road and back stock a against ade lost the minnow weather started getting rough the tiny ship was lost the min ting a maximum was lost the min ting a maximum security road and back stock a against ade lost the now weather started getting rough the tiny ship was lost the min ting a maximum security road and back stock a against ade lost the minnow the min ting a maximum security road and back stock a against ade lost the minnow weather started getting rough the tiny ship was lost the min ting a maximum.</p>
-                            <div class="two-column">
-                                <div class="row clearfix">
-                                    <!--Column-->
-                                    <div class="column col-md-6 col-sm-6 col-xs-12">
-                                        <!--Default Video Box-->
-                                        <div class="default-video-box">
-                                            <div class="inner-box">
-                                                <figure class="image-box"><img src="asset/images/resource/featured-image-7.jpg" alt=""></figure>
-                                                <a href="https://www.youtube.com/watch?v=wDwXASGueKo" class="lightbox-image overlay-link"><div class="icon-box"><span class="icon flaticon-play-button-2"></span></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--Column-->
-                                    <div class="column col-md-6 col-sm-6 col-xs-12">
-                                        <ul class="styled-list-one">
-                                            <li>The tiny ship was lost the min ting a maximum security road the minnow</li>
-                                            <li>Ting a maximum security road and back stock</li>
-                                            <li>Back stock a against ade lost the minnow the min ting</li>
-                                            <li>Minnow weather started getting rough the tiny</li>
-                                        </ul>
+                    {{--<div class="tab active-tab" id="prod-description">--}}
+                        {{--<div class="content">--}}
+                            {{--<h3>Vehicle Overview</h3>--}}
+                            {{--<p>The weather started getting rough the tiny ship was lost the min ting a maximum security road and back stock a against ade lost the minnow weather started getting rough the tiny ship was lost the min ting a maximum security road and back stock a against ade lost the minnow the min ting a maximum security road and back stock a against ade lost the minnow weather started getting rough the tiny ship was lost the min ting a maximum was lost the min ting a maximum security road and back stock a against ade lost the now weather started getting rough the tiny ship was lost the min ting a maximum security road and back stock a against ade lost the minnow the min ting a maximum security road and back stock a against ade lost the minnow weather started getting rough the tiny ship was lost the min ting a maximum.</p>--}}
+                            {{--<div class="two-column">--}}
+                                {{--<div class="row clearfix">--}}
+                                    {{--<!--Column-->--}}
+                                    {{--<div class="column col-md-6 col-sm-6 col-xs-12">--}}
+                                        {{--<!--Default Video Box-->--}}
+                                        {{--<div class="default-video-box">--}}
+                                            {{--<div class="inner-box">--}}
+                                                {{--<figure class="image-box"><img src="asset/images/resource/featured-image-7.jpg" alt=""></figure>--}}
+                                                {{--<a href="https://www.youtube.com/watch?v=wDwXASGueKo" class="lightbox-image overlay-link"><div class="icon-box"><span class="icon flaticon-play-button-2"></span></div></a>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<!--Column-->--}}
+                                    {{--<div class="column col-md-6 col-sm-6 col-xs-12">--}}
+                                        {{--<ul class="styled-list-one">--}}
+                                            {{--<li>The tiny ship was lost the min ting a maximum security road the minnow</li>--}}
+                                            {{--<li>Ting a maximum security road and back stock</li>--}}
+                                            {{--<li>Back stock a against ade lost the minnow the min ting</li>--}}
+                                            {{--<li>Minnow weather started getting rough the tiny</li>--}}
+                                        {{--</ul>--}}
 
-                                        <p>The weather started getting rough the tiny ship was lost the min ting a maxum security road and back stock a against ade lost the minnow weather started ting rough the tiny ship was lost the min ting a maximum security road and back at stock a against ade lost the minnow the min ting a maximum.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                        {{--<p>The weather started getting rough the tiny ship was lost the min ting a maxum security road and back stock a against ade lost the minnow weather started ting rough the tiny ship was lost the min ting a maximum security road and back at stock a against ade lost the minnow the min ting a maximum.</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
 
                     <!--Tab-->
                     <div class="tab" id="prod-reviews">

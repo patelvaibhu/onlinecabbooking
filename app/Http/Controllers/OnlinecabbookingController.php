@@ -76,6 +76,7 @@ class OnlinecabbookingController extends Controller
 
     public function adddriver()
     {
+
         return view('adddriver');
     }
 
@@ -97,6 +98,11 @@ class OnlinecabbookingController extends Controller
     public function addpayment()
     {
         return view('addpayment');
+    }
+
+    public function adminlogin()
+    {
+        return view('adminlogin');
     }
 
     public function driver()

@@ -30,15 +30,14 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MAIN NAVIGATION</li>
             <li class="active treeview">
-                <a href="#">
+                <a href="user">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="adminindex"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                    {{--<li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>--}}
+                    <li class="active"><a href="adminindex"><i class="fa fa-circle-o"></i>Home Page</a></li>
                 </ul>
             </li>
             <!--dashboard-->
@@ -51,13 +50,14 @@
               <span class="label label-primary pull-right"></span>
             </span>
 
-                </a>
+
                 <ul class="treeview-menu">
                     <li><a href="user"><i class="fa fa-hand-o-right"></i>admin</a></li>
                 </ul>
                 <!--admin-->
-
-            </li><li class="treeview">
+                </a>
+            </li>
+            <li class="treeview">
                 <a href="#">
                     <i class="fa fa-car"></i>
                     <span>Car</span>
@@ -88,7 +88,7 @@
                     <i class="glyphicon glyphicon-search"></i>
                     <span>inquiry</span>
                     <span class="pull-right-container">
-              <span class="label label-primary pull-right"></span>
+              <span class="1label label-primary pull-right"></span>
             </span>
                 </a>
                 <ul class="treeview-menu">
@@ -136,6 +136,20 @@
                 </ul>
             </li>
             <!--city-->
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa  fa-car"></i>
+                    <span>Booking</span>
+                    <span class="pull-right-container">
+              <span class="label label-primary pull-right"></span>
+            </span>
+                </a> <ul class="treeview-menu">
+                    {{--<li><a href="admin/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>--}}
+                    <li><a href="payment"><i class="fa fa-hand-o-right "></i>Booking</a></li>
+                </ul>
+            </li>
+
             <li class="treeview">
                 <a href="#">
                     <i class=" fa fa-file-text-o"></i>
