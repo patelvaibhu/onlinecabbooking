@@ -14,7 +14,12 @@ class CreatePlansTable extends Migration
     public function up()
     {
         Schema::create('plans', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('plan_id');
+            $table->string('pickup_city');
+            $table->string('drop_city');
+            $table->float('price');
+            $table->string('location');
+            $table->float('tolltax');
             $table->timestamps();
         });
     }

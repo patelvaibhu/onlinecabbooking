@@ -20,6 +20,8 @@ Route::get('index','OnlinecabbookingController@index')->name('index');
 
 Route::get('booking','OnlinecabbookingController@booking')->name('booking');
 
+Route::get('adminbooking','OnlinecabbookingController@adminbooking')->name('adminbooking');
+
 Route::get('contactus','OnlinecabbookingController@contact')->name('contactus');
 
 Route::get('aboutus','OnlinecabbookingController@about')->name('aboutus');
@@ -63,3 +65,7 @@ Route::get('newpassenger','OnlinecabbookingController@newpassenger')->name('newp
 Route::get('addpayment','OnlinecabbookingController@addpayment')->name('addpayment');
 
 Route::get('adminlogin','OnlinecabbookingController@adminlogin')->name('adminlogin');
+
+Route::get('adminfeedback','OnlinecabbookingController@adminfeedback')->name('adminfeedback');
+
+Route::get('adminplan','OnlinecabbookingController@adminplan')->name('adminplan');

@@ -13,12 +13,12 @@
             <h1>
                 <i class="fa fa-file-text-o"></i>
                 Plan
-                <small>advanced tables</small>
+                <small>plan details</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li><a href="#">Tables</a></li>
-                <li class="active">Data tables</li>
+                <li class="active">plan</li>
             </ol>
         </section>
 
@@ -34,7 +34,7 @@
                         <div class="box-body">
                             <table id="example1" class="table table-bordered table-striped">
 
-                                <a href="addcity"><button  type="button" class="btn" align="right">Add</button></a>
+                                <a href="adminplan"><button  type="button" class="btn" align="right">Add</button></a>
                                 <thead>
                                 <tr>
                                     <th>PICKUP CITY</th>
@@ -46,7 +46,7 @@
 
                                 </thead>
                                 <tbody>
-                                @for($i=0;$i<5;$i++)
+                                {{--@for($i=0;$i<5;$i++)--}}
                                 <tr>
                                     <td>Trident</td>
                                     <td>Internet
@@ -60,7 +60,7 @@
                                     <td> <i class="fa fa-trash"></i></td>
 
                                 </tr>
-                                @endfor
+                                {{--@endfor--}}
                                 <tfoot>
                                 <tr>
                                     <th>PICKUP CITY</th>

@@ -94,6 +94,19 @@ class OnlinecabbookingController extends Controller
     {
         return view('plan');
     }
+    public function adminbooking()
+    {
+        return view('adminbooking');
+    }
+
+    public function adminplan()
+    {
+        return view('adminplan');
+    }
+    public function adminfeedback()
+    {
+        return view('adminfeedback');
+    }
 
     public function addpayment()
     {

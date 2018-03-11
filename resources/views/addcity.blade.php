@@ -1,4 +1,34 @@
 
+{{--@extends('adminmain')--}}
+
+
+{{--@section('content')--}}
+
+
+
+    {{--<!-- Content Wrapper. Contains page content -->--}}
+    {{--<div class="content-wrapper">--}}
+        {{--<label>pickup city</label>--}}
+        {{--<input type="text"  name="pickup_city" class="form-control" id="usr" placeholder="pickup City">--}}
+        {{--<div class="form-group">--}}
+            {{--<label for="sel1">Pickup City:</label>--}}
+            {{--<select class="form-control" id="sel1">--}}
+                {{--<option>Vadodara</option>--}}
+                {{--<option>Vasad</option>--}}
+                {{--<option>Anand</option>--}}
+                {{--<option>Ahemdabad</option>--}}
+            {{--</select>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+    {{--@endsection--}}
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>

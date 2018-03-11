@@ -146,7 +146,7 @@
             </span>
                 </a> <ul class="treeview-menu">
                     {{--<li><a href="admin/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>--}}
-                    <li><a href="payment"><i class="fa fa-hand-o-right "></i>Booking</a></li>
+                    <li><a href="adminbooking"><i class="fa fa-hand-o-right "></i>Booking</a></li>
                 </ul>
             </li>
 
@@ -178,6 +178,20 @@
                 </ul>
             </li>
             <!--payment-->
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-weixin"></i>
+                    <span>feedback</span>
+                    <span class="pull-right-container">
+              <span class="label label-primary pull-right"></span>
+            </span>
+                </a> <ul class="treeview-menu">
+                    {{--<li><a href="admin/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>--}}
+                    <li><a href="adminfeedback"><i class="fa fa-hand-o-right "></i>feedback</a></li>
+                </ul>
+            </li>
+            <!--feedback-->
         </ul>
 
     </section>
