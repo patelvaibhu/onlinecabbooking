@@ -46,6 +46,7 @@
                                     <th>PRICE</th>
                                     <th>DRIVER ID</th>
                                     <th>PAYMENT_STATUS</th>
+                                    <th>Action</th>
 
                                 </tr>
                                 </thead>
@@ -63,9 +64,7 @@
                                         <td>Win 95+</td>
                                         <td> 4</td>
                                         <td>X</td>
-                                        <td> <i class="fa fa-eye"></i></td>
-                                        <td> <i class="fa fa-edit"></i></td>
-                                        <td> <i class="fa fa-trash"></i></td>
+                                        <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
                                     </tr>
                                     </tbody>
                                 <tfoot>
@@ -80,6 +79,8 @@
                                     <th>PRICE</th>
                                     <th>DRIVER ID</th>
                                     <th>PAYMENT_STATUS</th>
+                                    <th>Action</th>
+
                                 </tr>
                                 </tfoot>
                             </table>

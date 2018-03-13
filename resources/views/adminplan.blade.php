@@ -19,22 +19,26 @@
 
         <!-- Main content -->
         <section class="content">
+            <form method="post" action="{{Route('planstore')}}">
+            {{csrf_field()}}
+
             <div class="box-body" style="font-size: large">
-                <label>First Name</label>
-                <input type="text"  name="firstname" class="form-control" id="usr" placeholder="First name">
-                <label>Last Name</label>
-                <input type="text" class="form-control" name="lastname" id="usr" placeholder="Lirst name">
-                <label>Email</label>
-                <input type="text" class="form-control" id="usr"  name="email" placeholder="Email">
-                <label>Conatct No</label>
-                <input type="text" class="form-control"  name="contact_no" id="usr" placeholder="Contact no">
-                <label>Message</label>
-                <textarea class="form-control" palceholder="Message"  rows="5" id="comment" ></textarea>
+                <label>pickup City</label>
+                <input type="text"  name="pickup_city" class="form-control" id="usr" placeholder="First name">
+                <label>Drop City</label>
+                <input type="text" class="form-control" name="drop_city" id="usr" placeholder="Lirst name">
+                <label>Price</label>
+                <input type="text" class="form-control" id="usr"  name="price" placeholder="Email">
+                <label>Location</label>
+                <input type="text" class="form-control"  name="location" id="usr" placeholder="Contact no">
+                <label>Tolltax</label>
+                <input type="text" class="form-control"  name="tolltax" id="usr" placeholder="Contact no">
                     <div align="center">
-                        <button type="button" class="btn btn-info">ADD PLAN</button>
+                        <button type="submit" class="btn btn-info">ADD PLAN</button>
 
                     </div>
             </div>
+            </form>
         </section>
         <!-- /.content -->
     </div>

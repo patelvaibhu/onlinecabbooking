@@ -36,16 +36,16 @@
         <!-- Main -->
         <div class="about-bottom">
             <div class="w3l_about_bottom_right two">
-                <h2 class="tittle"><img src="book/images/cab.png" alt=""><span></span></h2>
+                <h2 class="tittle"><img src="book/images/cab.png" alt=""><span>Inquiry</span></h2>
                 <div class="book-form">
-                    <form action="#" method="post">
-
+                    <form method="post"  action="{{Route('inquirystore')}}" >
+                        {{csrf_field()}}
                         <div class="form-date-w3-agileits">
                             <div class="form-agileits">
                                 <label> Passenger Name:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Passenger Name" required="">
+                                <input type="text" name="passenger_name" placeholder="Passenger Name" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -56,7 +56,7 @@
                                 <label> Email :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="email" name="name" placeholder="Email" required="">
+                                <input type="email" name="email" placeholder="Email" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -67,7 +67,7 @@
                                 <label>Contact No:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name"  placeholder="Contact No" required="">
+                                <input type="text" name="contact_no"  placeholder="Contact No" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -78,7 +78,7 @@
                                 <label> Message:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Message" required="">
+                                <input type="text" name="message" placeholder="Message" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>

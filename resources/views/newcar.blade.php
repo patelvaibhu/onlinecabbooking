@@ -26,6 +26,8 @@
     <!--//online-fonts -->
 </head>
 <body style="background-image:url('asset/images/book/car1.jpg')">
+<form method="post" action="{{Route('carsstore')}}">
+    {{csrf_field()}}
 
 <div class="w3-container w3-center w3-animate-zoom">
 
@@ -45,7 +47,7 @@
                                 <label> Car Name:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Car Name" required="">
+                                <input type="text" name="city_name" placeholder="Car Name" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -56,7 +58,7 @@
                                 <label> Location :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Location" required="">
+                                <input type="text" name="location" placeholder="Location" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -67,7 +69,7 @@
                                 <label> Date Time :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="date" value="date" name="name" placeholder="Date Time"  required="">
+                                <input type="date" value="date" name="datetime" placeholder="Date Time"  required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -87,4 +89,5 @@
         </div>
     </div>
 </div>
+</form>
 </body>

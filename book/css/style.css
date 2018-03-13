@@ -71,7 +71,7 @@ span {
     margin-right: 10px;
 	color: #2baf2b;
 }
-.book-form input[type="text"], .book-form input[type="email"] , .book-form input[type="date"]{
+.book-form input[type="text"], .book-form input[type="email"] , .book-form input[type="password"] , .book-form input[type="date"]{
     width: 92%;
     outline: none;
     font-size: 0.9em;
@@ -90,7 +90,10 @@ span {
 	color: #bbb9b9;
 }
 .book-form input[type="date"], .book-form input[type="date"] {
-	color:#fff;
+	color:#bbb9b9;
+}
+.book-form input[type="password"], .book-form input[type="password"] {
+	color: #bbb9b9;
 }
 /*.book-form input[type="text"], .book-form input[type="date"] {*/
 	/*color: #bbb9b9;*/

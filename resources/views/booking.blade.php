@@ -28,6 +28,8 @@
         <!--//online-fonts -->
     </head>
     <body style="background-image: url('asset/images/book/car.jpg')">
+    <form method="post" action="{{Route('bookingstore')}}">
+        {{csrf_field()}}
     <div class="w3-container w3-center w3-animate-zoom">
 
     <div class="header">
@@ -125,6 +127,7 @@
 
     <!-- footer -->
     </div>
+    </form>
     </body>
 
 @endsection

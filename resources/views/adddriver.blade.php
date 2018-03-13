@@ -38,14 +38,15 @@
             <div class="w3l_about_bottom_right two">
                 <h2 class="tittle"><img src="book/images/cab.png" alt=""><span>Driver</span></h2>
                 <div class="book-form">
-                    <form action="#" method="post">
+                    <form method="post" action="{{Route('driverstore')}}" >
+                        {{csrf_field()}}
 
                         <div class="form-date-w3-agileits">
                             <div class="form-agileits">
                                 <label> Full Name:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Full Name" required="">
+                                <input type="text" name="full_name" placeholder="Full Name" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -56,7 +57,7 @@
                                 <label> License No :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="License No" required="">
+                                <input type="text" name="license_no" placeholder="License No" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -66,7 +67,7 @@
                                 <label> AdharCard No :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="AdharCard No" required="">
+                                <input type="text" name="adharcard_no" placeholder="AdharCard No" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -77,7 +78,7 @@
                                 <label> Election Card :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Election Card" required="">
+                                <input type="text" name="election_card" placeholder="Election Card" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -88,7 +89,7 @@
                                 <label>Address :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Address" required="">
+                                <input type="text" name="address" placeholder="Address" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -99,7 +100,7 @@
                                 <label> City :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="City" required="">
+                                <input type="text" name="city" placeholder="City" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -110,7 +111,7 @@
                                 <label>Contact No:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Contact No" required="">
+                                <input type="text" name="contact_no" placeholder="Contact No" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>

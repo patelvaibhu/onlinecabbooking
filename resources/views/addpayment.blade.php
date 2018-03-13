@@ -38,14 +38,14 @@
             <div class="w3l_about_bottom_right two">
                 <h2 class="tittle"><img src="book/images/cab.png" alt=""><span>Payment</span></h2>
                 <div class="book-form">
-                    <form action="#" method="post">
-
+                    <form action="{{Route('paymentstore')}}" method="post">
+                    {{csrf_field()}}
                         <div class="form-date-w3-agileits">
                             <div class="form-agileits">
                                 <label>Car Name:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Car Name" required="">
+                                <input type="text" name="car_name" placeholder="Car Name" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -56,7 +56,7 @@
                                 <label> Email :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="email" name="name" placeholder="Email" required="">
+                                <input type="email" name="email" placeholder="Email" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -67,7 +67,7 @@
                                 <label> Amount:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Amount" required="">
+                                <input type="text" name="amount" placeholder="Amount" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>

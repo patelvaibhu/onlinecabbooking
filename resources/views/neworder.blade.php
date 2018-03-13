@@ -38,14 +38,15 @@
             <div class="w3l_about_bottom_right two">
                 <h2 class="tittle"><img src="book/images/cab.png" alt=""><span>New Order</span></h2>
                 <div class="book-form">
-                    <form action="#" method="post">
+                    <form  method="post"  action="{{Route('orderstore')}}">
+                            {{csrf_field()}}
 
                             <div class="form-date-w3-agileits">
                                 <div class="form-agileits">
                                     <label> Pickup City :</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder="Pickup City" required="">
+                                    <input type="text" name="pickup_city" placeholder="Pickup City" required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>
@@ -54,7 +55,7 @@
                                     <label> Drop City :</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder="Drop City" required="">
+                                    <input type="text" name="drop_city" placeholder="Drop City" required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>
@@ -63,7 +64,7 @@
                                 <label> Pickup Date :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="date" value="date" name="name" placeholder="pickup Date" required="">
+                                <input type="date" value="date" name="pickup_date" placeholder="pickup Date" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -73,7 +74,7 @@
                                     <label> Pickup Address :</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder="Pickup Address" required="">
+                                    <input type="text" name="pickup_address" placeholder="Pickup Address" required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>
@@ -82,7 +83,7 @@
                                     <label> Drop Address :</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder="Drop Address" required="">
+                                    <input type="text" name="drop_address" placeholder="Drop Address" required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>
@@ -91,7 +92,7 @@
                                     <label>Car Id :</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder="Car Id " required="">
+                                    <input type="text" name="car_id" placeholder="Car Id " required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>
@@ -100,7 +101,7 @@
                                     <label> Price:</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder=" Price" required="">
+                                    <input type="text" name="price" placeholder=" Price" required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>
@@ -109,7 +110,7 @@
                                     <label> Driver Id:</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder="Driver Id" required="">
+                                    <input type="text" name="driver_id" placeholder="Driver Id" required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>
@@ -118,7 +119,7 @@
                                     <label>Payment status:</label>
                                 </div>
                                 <div class="form-agileits-2">
-                                    <input type="text" name="name" placeholder="Payment Status" required="">
+                                    <input type="text" name="payment_status" placeholder="Payment Status" required="">
                                 </div>
                                 <div class="clear"> </div>
                             </div>

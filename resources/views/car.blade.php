@@ -39,6 +39,7 @@
                                 <th>EMAIL</th>
                                 <th>PASSWORD</th>
                                 <th>CONTACT_NO</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -50,9 +51,7 @@
                                 <td>Win 95+</td>
                                 <td> 4</td>
 
-                                <td> <i class="fa fa-eye"></i></td>
-                                <td> <i class="fa fa-edit"></i></td>
-                                <td> <i class="fa fa-trash"></i></td>
+                                <td> <i class="fa fa-eye"></i> <i class="fa fa-edit"></i> <i class="fa fa-trash"></i></td>
                             </tr>
                             </tbody>
                             {{--@endfor--}}
@@ -63,7 +62,7 @@
                                 <th>EMAIL</th>
                                 <th>PASSWORD</th>
                                 <th>CONTACT_NO</th>
-
+                                <th>Action</th>
                             </tr>
                             </tfoot>
                         </table>

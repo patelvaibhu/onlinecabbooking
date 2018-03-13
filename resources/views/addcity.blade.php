@@ -52,42 +52,44 @@
 <h1>City</h1>
 <div class="w3l-main">
     <div class="w3l-from">
-        <form action="#" method="post">
+
+        <form  method="post" action="{{Route('citystore')}}">
+        {{csrf_field()}}
 
                 <div class="clear"></div>
                 <div class="pickupcity">
                     <label class="head">Pickup City<span class="w3l-star"> * </span></label>
-                    <select class="form-control" required="">
+                    <select class="form-control"  name="pickup_city" required="">
                         <option>Vadodara</option>
                         <option>Vasad</option>
                         <option>Anand</option>
                         <option>Ahemdabad</option>
                     </select>
                 </div>
-                <div class="w3l-options2">
+                <div class="pickupcity">
                     <label class="head">Drop City<span class="w3l-star"> * </span></label>
-                    <select class="dropcity" required="">
-                        <option value="">vadodara</option>
-                        <option value="">Vasad</option>
-                        <option value="">Anand</option>
-                        <option value="">Ahemdabad</option>
+                    <select class="form-control" name="drop_city" required="">
+                        <option>vadodara</option>
+                        <option>Vasad</option>
+                        <option>Anand</option>
+                        <option>Ahemdabad</option>
                     </select>
                 </div>
                 <div class="clear"></div>
 
             <div class="w3l-num">
                 <label class="head">PICK UP TIME<span class="w3l-star"> * </span></label>
-                <input type="text"  name="City" placeholder="" required="">
+                <input type="text"  name="pickup_time" placeholder="" required="">
             </div>
             <div class="w3l-date">
                 <label class="head">PICK UP DATE<span class="w3l-star"> * </span></label>
                 <div class="styled-input">
-                    <input class="date" id="datepicker" name="Text" type="text" value="MM/DD/YYYY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MM/DD/YYYY';}" required="">
+                    <input class="date" id="datepicker" name="pickup_date" type="text" value="MM/DD/YYYY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MM/DD/YYYY';}" required="">
                 </div>
             </div>
             <div class="w3l-sym">
                 <label class="head"  style=" margin: 0px -150px 10px">TRAVEL TYPE<span class="w3l-star"> * </span></label>
-                <input type="text" name="State" placeholder="" required=" "    style=" margin: 0px -150px 10px;">
+                <input type="text" name="travel_type" placeholder="" required=" "    style=" margin: 0px -150px 10px;">
             </div>
 
                 <div class="btn">

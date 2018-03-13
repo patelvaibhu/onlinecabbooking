@@ -35,6 +35,7 @@
                                 <th>CAR_TYPE</th>
                                 <th>EMAIL</th>
                                 <th>AMOUNT</th>
+                                <th>ACTION</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -43,10 +44,7 @@
                                 <td>Trident</td>
                                 <td>Trident</td>
 
-
-                                <td> <i class="fa fa-eye"></i></td>
-                                <td> <i class="fa fa-edit"></i></td>
-                                <td> <i class="fa fa-trash"></i></td>
+                                <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
                             </tr>
                             </tbody>
                             {{--@endfor--}}
@@ -56,6 +54,7 @@
                                 <th>CAR_TYPE</th>
                                 <th>EMAIL</th>
                                 <th>AMOUNT</th>
+                                <th>ACTION</th>
 
                             </tr>
                             </tfoot>

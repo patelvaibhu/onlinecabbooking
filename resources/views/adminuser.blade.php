@@ -26,7 +26,8 @@
     <!--//online-fonts -->
 </head>
 <body style="background-image:url('asset/images/book/car.jpg')">
-
+<form method="post" action="{{Route('adminuserstore')}}">
+    {{csrf_field()}}
 <div class="w3-container w3-center w3-animate-zoom">
 
     <div class="header">
@@ -45,7 +46,7 @@
                                 <label> Admin Name:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Admin Name" required="">
+                                <input type="text" name="admin_name" placeholder="Admin Name" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -56,7 +57,7 @@
                                 <label> Email :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="email" name="name" placeholder="Email" required="">
+                                <input type="email" name="email" placeholder="Email" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -67,7 +68,7 @@
                                 <label> Password :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name"  placeholder="password" required="">
+                                <input type="password" name="password" placeholder="password" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -78,7 +79,7 @@
                                 <label> Contact No:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Contact No" required="">
+                                <input type="text" name="contact_no" placeholder="Contact No" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -98,4 +99,5 @@
         </div>
     </div>
 </div>
+</form>
 </body>

@@ -80,6 +80,8 @@
             </div>
         </div>
         <!--Form Container -->
+        <form method="post" action="{{Route('contactusstore')}}">
+            {{csrf_field()}}
         <div class="form-container panel panel-danger ">
             <div class="sec-title"><h2>Feedback</h2></div>
             <!--Contact Form-->
@@ -118,9 +120,8 @@
                 </form>
             </div>
         </div>
-
+        </form>
     </div>
-
 </section>
 
     <!--Google Map APi Key-->

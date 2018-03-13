@@ -41,6 +41,7 @@
                                     <th>PICKUP TIME</th>
                                     <th>PICKUP DATE</th>
                                     <th>TRAVEL TYPE</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -52,9 +53,10 @@
                                     <td>Win 95+</td>
                                     <td> 4</td>
                                     <td>X</td>
-                                    <td> <i class="fa fa-eye"></i></td>
-                                    <td> <i class="fa fa-edit"></i></td>
-                                    <td> <i class="fa fa-trash"></i></td>
+                                    <td> <i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;
+                                        <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+                                        <i class="fa fa-trash"></i></td>
+
                                 </tr>
                                 </tbody>
                                 {{--@endfor--}}
@@ -66,6 +68,7 @@
                                     <th>PICKUP TIME</th>
                                     <th>PICKUP DATE</th>
                                     <th>TRAVEL TYPE</th>
+                                    <th>Action</th>
                                 </tr>
                                 </tfoot>
                             </table>

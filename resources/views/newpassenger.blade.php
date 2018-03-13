@@ -38,25 +38,36 @@
             <div class="w3l_about_bottom_right two">
                 <h2 class="tittle"><img src="book/images/cab.png" alt=""><span>Passenger</span></h2>
                 <div class="book-form">
-                    <form action="#" method="post">
-
+                    <form  method="post" action="{{Route('passengerstore')}}">
+                        {{csrf_field()}}
                         <div class="form-date-w3-agileits">
                             <div class="form-agileits">
                                 <label> Full Name:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Full Name" required="">
+                                <input type="text" name="full_name" placeholder="Full Name" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
                         <!--full name-->
+
+                        <div class="form-date-w3-agileits" style="font-color:#bbb9b9">
+                            <div class="form-agileits">
+                                <label> Birth Date :</label>
+                            </div>
+                            <div class="form-agileits-2">
+                                <input type="date" value="date" name="birth_date" placeholder="Birth Date"  required="">
+                            </div>
+                            <div class="clear"> </div>
+                        </div>
+                        <!--Birth Date-->
 
                         <div class="form-date-w3-agileits">
                             <div class="form-agileits">
                                 <label> Email :</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="email" name="name" placeholder="Email" required="">
+                                <input type="email" name="email" placeholder="Email" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -67,31 +78,18 @@
                                 <label> Password:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="password" required="">
+                                <input type="text" name="password" placeholder="password" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
                         <!--password-->
-
-
-
-                        <div class="form-date-w3-agileits" style="font-color:#bbb9b9">
-                            <div class="form-agileits">
-                                <label> Birth Date :</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="date" value="date" name="name" placeholder="Birth Date"  required="">
-                            </div>
-                            <div class="clear"> </div>
-                        </div>
-                        <!--Birth Date-->
 
                         <div class="form-date-w3-agileits">
                             <div class="form-agileits">
                                 <label>Address:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Address" required="">
+                                <input type="text" name="address" placeholder="Address" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
@@ -102,7 +100,7 @@
                                 <label>Contact No:</label>
                             </div>
                             <div class="form-agileits-2">
-                                <input type="text" name="name" placeholder="Contact No" required="">
+                                <input type="text" name="contact_no" placeholder="Contact No" required="">
                             </div>
                             <div class="clear"> </div>
                         </div>
