@@ -11,7 +11,7 @@
         <h1>
             <i class="fa  fa-car"></i>
             Car
-            <small>advanced tables</small>
+            <small>Car Details</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -26,13 +26,17 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">Data Table With Full Features</h3>
+                        <h3 class="box-title">Car Details</h3>
+
+                    </div>
+                    <div align="left">
+                        <a href="newcar"><button type="button" class="btn">Add New Car</button></a>
+
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
 
-                            <a href="newcar"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
                                 <th>CITY NAME</th>
@@ -48,7 +52,9 @@
                                 <td>{{$car->location}}</td>
                                 <td>{{$car->datetime}}</td>
 
-                                <td> <i class="fa fa-eye"></i> <i class="fa fa-edit"></i> <i class="fa fa-trash"></i></td>
+                                <td>  <a href="{{route('viewcar',['id'=>$car->car_id])}}"><i class="fa fa-eye"></i> &nbsp;&nbsp;</a>
+                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-trash"></i></td>
                             </tr>
 
                                 @endforeach

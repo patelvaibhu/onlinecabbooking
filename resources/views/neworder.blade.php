@@ -1,141 +1,102 @@
+
+@extends('adminmain')
+
 @section('content')
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Order
+                <small>Order Details</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="adminindex"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="order"><i class="fa fa-dashboard"></i>Order</a></li>
+                <li class="active">Welcome Order</li>
+            </ol>
+        </section>
 
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Order</title>
-    <!-- Meta tag Keywords -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <section class="content">
+            <form method="post" action="{{Route('orderstore')}}">
+                {{csrf_field()}}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Cab Booking Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-        function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- Meta tag Keywords -->
-
-    <!-- css files -->
-    <link rel="stylesheet" type="text/css" href="asset/login/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="book/css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="book/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
-    <link rel="stylesheet" href="book/css/jquery-ui.css" />
-    <!-- //css files -->
-
-    <!-- online-fonts -->
-    <!--//online-fonts -->
-</head>
-<body style="background-image:url('asset/images/book/car.jpg')">
-
-<div class="w3-container w3-center w3-animate-zoom">
-
-    <div class="header">
-
-    </div>
-    <div class="w3-main">
-        <!-- Main -->
-        <div class="about-bottom">
-            <div class="w3l_about_bottom_right two">
-                <h2 class="tittle"><img src="book/images/cab.png" alt=""><span>New Order</span></h2>
-                <div class="book-form">
-                    <form  method="post"  action="{{Route('orderstore')}}">
-                            {{csrf_field()}}
-
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label> Pickup City :</label>
-                                </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="pickup_city" placeholder="Pickup City" required="">
-                                </div>
-                                <div class="clear"> </div>
                             </div>
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label> Drop City :</label>
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Pick Up City </label>
+                                        <select class="form-control" style="font-size: large" placeholder="Pick Up City" name="pickup_city">
+                                            <option>Vadodara</option>
+                                            <option>Vasad</option>
+                                            <option>Anand</option>
+                                            <option>Ahemdabad</option>
+                                        </select>
+
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Drop City</label>
+                                        <select class="form-control" style="font-size: large" placeholder="Drop City" name="drop_city">
+                                            <option>Vadodara</option>
+                                            <option>Vasad</option>
+                                            <option>Anand</option>
+                                            <option>Ahemdabad</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Pick Up  Date</label>
+                                        <input type="date" placeholder="Pick Up Date" name="pickup_date" class="form-control" style="font-size: large">
+
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Pick UP Address</label>
+                                        <input type="text" placeholder="Pick Up Address" name="pickup_address" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Drop Address</label>
+                                        <input type="text" placeholder="Drop Address" name="drop_address" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Car Id</label>
+                                        <input type="text" placeholder="Car Id" name="car_id" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Price</label>
+                                        <input type="text" placeholder="Price" name="price" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Driver Id</label>
+                                        <input type="text" placeholder="Driver Id" name="driver_id" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Payment Status</label>
+                                        <input type="text" placeholder="Payment Status" name="payment_status" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div align="center" >
+                                        <button type="submit" class="btn btn-primary btn-lg">ORDER REGISTER</button>
+                                        {{--<button type="button" class="btn btn-block btn-primary btn-flat">Primary</button>--}}
+                                    </div>
+
+                                </form>
+
+                                <div class="col-md-2">
+
                                 </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="drop_city" placeholder="Drop City" required="">
-                                </div>
-                                <div class="clear"> </div>
                             </div>
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label> Pickup Date :</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="date" value="date" name="pickup_date" placeholder="pickup Date" required="">
-                            </div>
-                            <div class="clear"> </div>
                         </div>
+                    </div>
 
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label> Pickup Address :</label>
-                                </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="pickup_address" placeholder="Pickup Address" required="">
-                                </div>
-                                <div class="clear"> </div>
-                            </div>
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label> Drop Address :</label>
-                                </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="drop_address" placeholder="Drop Address" required="">
-                                </div>
-                                <div class="clear"> </div>
-                            </div>
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label>Car Id :</label>
-                                </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="car_id" placeholder="Car Id " required="">
-                                </div>
-                                <div class="clear"> </div>
-                            </div>
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label> Price:</label>
-                                </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="price" placeholder=" Price" required="">
-                                </div>
-                                <div class="clear"> </div>
-                            </div>
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label> Driver Id:</label>
-                                </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="driver_id" placeholder="Driver Id" required="">
-                                </div>
-                                <div class="clear"> </div>
-                            </div>
-                            <div class="form-date-w3-agileits">
-                                <div class="form-agileits">
-                                    <label>Payment status:</label>
-                                </div>
-                                <div class="form-agileits-2">
-                                    <input type="text" name="payment_status" placeholder="Payment Status" required="">
-                                </div>
-                                <div class="clear"> </div>
-                            </div>
+                    {{--<div class="box-body" style="font-size: large">--}}
 
-                                <div class="make">
-                                    <input type="submit" value="Book My Cab">
-                                </div>
-                        {{--</div><!--/box-->--}}
-
-
-                    </form>
-
+                    {{--</div>--}}
                 </div>
-            </div>
-            <div class="clear"> </div>
-        </div>
+            </form>
+        </section>
+        <!-- /.content -->
     </div>
-</div>
-</body>
+
+
+@endsection

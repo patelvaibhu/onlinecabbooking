@@ -51,7 +51,9 @@
                                     <td>{{$admin->password}}</td>
                                     <td>{{$admin->contact_no}}</td>
 
-                                <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
+                                <td>  <a href="{{route('viewadmin',['id'=>$admin->admin_id])}}"><i class="fa fa-eye"></i></a>
+                                    <i class="fa fa-edit"></i>
+                                    <i class="fa fa-trash"></i></td>
                             </tr>
                                 @endforeach
                             </tbody>

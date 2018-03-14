@@ -27,11 +27,12 @@
                     <div class="box-header">
                         <h3 class="box-title">Data Table With Full Features</h3>
                     </div>
+                    <div align="left">
+                        <a href="admininquiry"><button type="button" class="btn btn-primary btn-lg">INQUIRY</button></a>
+                    </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
-
-                            <a href="admininquiry"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
                                 <th>PASSENGER_NAME</th>
@@ -50,8 +51,10 @@
                                 <td>{{$inquiry->contact_no}}</td>
                                 <td>{{$inquiry->message}}</td>
 
-
-                                <td><i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
+                                <td>
+                                    <a href="{{route('viewinquiry',['id'=>$inquiry->inquiry_id])}}"><i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-trash"></i></td>
                             </tr>
                                 @endforeach
                             </tbody>

@@ -52,7 +52,7 @@
                                     <td>{{$citidata->pickup_time}}</td>
                                     <td>{{$citidata->pickup_date}}</td>
                                     <td>{{$citidata->travel_type}}</td>
-                                    <td> <i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;
+                                    <td> <a href="{{route('viewcity',['id'=>$citidata->city_id])}}"><i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;</a>
                                         <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
                                         <i class="fa fa-trash"></i></td>
 

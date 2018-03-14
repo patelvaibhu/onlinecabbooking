@@ -31,35 +31,49 @@ Route::post('contactusstore','OnlinecabbookingController@contactusstore')->name(
 Route::get('adminuser','OnlinecabbookingController@adminuser')->name('adminuser');//adminusre form
 Route::post('adminuserstore','OnlinecabbookingController@adminuserstore')->name('adminuserstore');//store
 Route::get('user','OnlinecabbookingController@user')->name('user');// admin data
+Route::get('viewadmin/{id}','OnlinecabbookingController@viewadmin')->name('viewadmin');
+
 
 
 Route::get('aboutus','OnlinecabbookingController@about')->name('aboutus');
 
 Route::get('cars','OnlinecabbookingController@cars')->name('cars');//forms
 Route::post('carsstore','OnlinecabbookingController@carsstore')->name('carsstore');//store data
-
 Route::get('adminindex','OnlinecabbookingController@admin')->name('adminindex');
+
+
 
 Route::get('city','OnlinecabbookingController@city')->name('city');
 Route::get('addcity','OnlinecabbookingController@addcity')->name('addcity');
 Route::post('citystore','OnlinecabbookingController@citystore')->name('citystore');
+Route::get('viewcity/{id}','OnlinecabbookingController@viewcity')->name('viewcity');
+
 
 Route::get('plan','OnlinecabbookingController@plan')->name('plan');
 Route::post('planstore','OnlinecabbookingController@planstore')->name('planstore');
 
 Route::get('order','OnlinecabbookingController@order')->name('order');//form
 Route::post('orderstore','OnlinecabbookingController@orderstore')->name('orderstore'); //form store
-
-
 Route::get('neworder','OnlinecabbookingController@neworder')->name('neworder');
+Route::get('vieworder/{id}','OnlinecabbookingController@vieworder')->name('vieworder');
+
+
+
 
 Route::get('driver','OnlinecabbookingController@driver')->name('driver');
 Route::post('driverstore','OnlinecabbookingController@driverstore')->name('driverstore');
 
+Route::get('viewdriver/{id}','OnlinecabbookingController@viewdriver')->name('viewdriver');
+
+
 Route::get('car','OnlinecabbookingController@car')->name('car');
+Route::get('viewcar/{id}','OnlinecabbookingController@viewcar')->name('viewcar');
+
 
 Route::get('inquiry','OnlinecabbookingController@inquiry')->name('inquiry');
 Route::post('inquirystore','OnlinecabbookingController@inquirystore')->name('inquirystore');
+Route::get('viewinquiry/{id}','OnlinecabbookingController@viewinquiry')->name('viewinquiry');
+
 
 Route::get('passenger','OnlinecabbookingController@passenger')->name('passenger');
 Route::post('passengerstore','OnlinecabbookingController@passengerstore')->name('passengerstore');

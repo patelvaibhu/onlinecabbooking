@@ -8,13 +8,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Blank page
+                City
                 <small>it all starts here</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li><a href="#">Examples</a></li>
-                <li class="active">Blank page</li>
+                <li class="active">City</li>
             </ol>
         </section>
 
@@ -43,20 +43,16 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>NAME</th>
-                                        <th>PICKUP_DATE</th>
-                                        <th>PICKUP_LOCATION</th>
-                                        <th>DROP_LOCATION</th>
-                                        <th>EMAIL</th>
-                                        <th>CONTACT_NO</th>
-
+                                        <th>CITY NAME</th>
+                                        <th>LOCATION</th>
+                                        <th>DATE TIME</th>
                                     </tr>
                                     </thead>
 
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->booking_id}}
+                                                {{$car->car_id}}
                                             </td>
                                         </div>
                                     </div>
@@ -65,7 +61,7 @@
 
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->name}}
+                                                {{$car->city_name}}
                                             </td>
                                         </div>
                                     </div>
@@ -73,7 +69,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_date}}
+                                                {{$car->location}}
                                             </td>
                                         </div>
                                     </div>
@@ -81,28 +77,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_location}}
-                                            </td>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <td>
-                                                {{$booking->drop_location}}
-                                            </td>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <td>
-                                                {{$booking->email}}
-                                            </td>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <td>
-                                                {{$booking->contact_no}}
+                                                {{$car->datetime}}
                                             </td>
                                         </div>
                                     </div>

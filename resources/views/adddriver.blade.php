@@ -1,134 +1,83 @@
+
+@extends('adminmain')
+
 @section('content')
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Driver
+                <small>Driver Details</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="adminindex"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="driver"><i class="fa fa-dashboard"></i>Driver</a></li>
+                <li class="active">Welcome Driver</li>
+            </ol>
+        </section>
 
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Driver</title>
-    <!-- Meta tag Keywords -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <section class="content">
+            <form method="post" action="{{Route('driverstore')}}">
+                {{csrf_field()}}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Cab Booking Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-        function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- Meta tag Keywords -->
-
-    <!-- css files -->
-    <link rel="stylesheet" type="text/css" href="asset/login/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="book/css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="book/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
-    <link rel="stylesheet" href="book/css/jquery-ui.css" />
-    <!-- //css files -->
-
-    <!-- online-fonts -->
-    <!--//online-fonts -->
-</head>
-<body style="background-image:url('asset/images/book/car.jpg')">
-
-<div class="w3-container w3-center w3-animate-zoom">
-
-    <div class="heade1">
-
-    </div>
-    <div class="w3-main">
-        <!-- Main -->
-        <div class="about-bottom">
-            <div class="w3l_about_bottom_right two">
-                <h2 class="tittle"><img src="book/images/cab.png" alt=""><span>Driver</span></h2>
-                <div class="book-form">
-                    <form method="post" action="{{Route('driverstore')}}" >
-                        {{csrf_field()}}
-
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label> Full Name:</label>
                             </div>
-                            <div class="form-agileits-2">
-                                <input type="text" name="full_name" placeholder="Full Name" required="">
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Full Name</label>
+                                        <input type="text" placeholder="Full Name" name="full_name" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>License No</label>
+                                        <input type="text" placeholder="License No" name="license_no" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Adharcard No</label>
+                                        <input type="datetime-local" placeholder="Adharcard No" name="adharcard_no" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Election Card</label>
+                                        <input type="text" placeholder="Election Card" name="election_card" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Address</label>
+                                        <input type="text" placeholder="Address" name="address" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>City</label>
+                                        <input type="text" placeholder="City" name="city" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Contact_No</label>
+                                        <input type="text" placeholder="Contact No" name="contact_no" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div align="center" >
+                                        <button type="submit" class="btn btn-primary btn-lg">DRIVER</button>
+                                        {{--<button type="button" class="btn btn-block btn-primary btn-flat">Primary</button>--}}
+                                    </div>
+
+                                </form>
+
+                                <div class="col-md-2">
+
+                                </div>
                             </div>
-                            <div class="clear"> </div>
                         </div>
-                        <!--Car-->
+                    </div>
 
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label> License No :</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="text" name="license_no" placeholder="License No" required="">
-                            </div>
-                            <div class="clear"> </div>
-                        </div>
-                        <!--license-->
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label> AdharCard No :</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="text" name="adharcard_no" placeholder="AdharCard No" required="">
-                            </div>
-                            <div class="clear"> </div>
-                        </div>
-                        <!--Adhar No-->
+                    {{--<div class="box-body" style="font-size: large">--}}
 
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label> Election Card :</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="text" name="election_card" placeholder="Election Card" required="">
-                            </div>
-                            <div class="clear"> </div>
-                        </div>
-                        <!--Election card-->
-
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label>Address :</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="text" name="address" placeholder="Address" required="">
-                            </div>
-                            <div class="clear"> </div>
-                        </div>
-                        <!--Address-->
-
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label> City :</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="text" name="city" placeholder="City" required="">
-                            </div>
-                            <div class="clear"> </div>
-                        </div>
-                        <!--City-->
-
-                        <div class="form-date-w3-agileits">
-                            <div class="form-agileits">
-                                <label>Contact No:</label>
-                            </div>
-                            <div class="form-agileits-2">
-                                <input type="text" name="contact_no" placeholder="Contact No" required="">
-                            </div>
-                            <div class="clear"> </div>
-                        </div>
-                        <!--Adhar No-->
-
-                        <div class="make">
-                            <input type="submit" value="Add Driver Details">
-                        </div>
-                        {{--</div><!--/box-->--}}
-
-
-                    </form>
-
+                    {{--</div>--}}
                 </div>
-            </div>
-            <div class="clear"> </div>
-        </div>
+            </form>
+        </section>
+        <!-- /.content -->
     </div>
-</div>
-</body>
+
+
+@endsection

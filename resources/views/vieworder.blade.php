@@ -8,13 +8,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Blank page
+                City
                 <small>it all starts here</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li><a href="#">Examples</a></li>
-                <li class="active">Blank page</li>
+                <li class="active">City</li>
             </ol>
         </section>
 
@@ -43,20 +43,22 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>NAME</th>
+                                        <th>PICKUP_CITY</th>
+                                        <th>DROP_CITY</th>
                                         <th>PICKUP_DATE</th>
-                                        <th>PICKUP_LOCATION</th>
-                                        <th>DROP_LOCATION</th>
-                                        <th>EMAIL</th>
-                                        <th>CONTACT_NO</th>
-
+                                        <th>PICKUP_ADDRESS</th>
+                                        <th>DROP_ADDRESS</th>
+                                        <th>CAR_ID</th>
+                                        <th>PRICE</th>
+                                        <th>DRIVER_ID</th>
+                                        <th>PAYMENT_STATUS</th>
                                     </tr>
                                     </thead>
 
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->booking_id}}
+                                                {{$order->order_id}}
                                             </td>
                                         </div>
                                     </div>
@@ -65,7 +67,7 @@
 
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->name}}
+                                                {{$order->pickup_city}}
                                             </td>
                                         </div>
                                     </div>
@@ -73,7 +75,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_date}}
+                                                {{$order->drop_city}}
                                             </td>
                                         </div>
                                     </div>
@@ -81,28 +83,49 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_location}}
+                                                {{$order->pickup_date}}
                                             </td>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->drop_location}}
+                                                {{$order->pickup_address}}
                                             </td>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->email}}
+                                                {{$order->drop_address}}
                                             </td>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->contact_no}}
+                                                {{$order->car_id}}
+                                            </td>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <td>
+                                                {{$order->price}}
+                                            </td>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <td>
+                                                {{$order->driver_id}}
+                                            </td>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <td>
+                                                {{$order->payment_status}}
                                             </td>
                                         </div>
                                     </div>

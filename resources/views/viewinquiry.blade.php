@@ -1,24 +1,26 @@
 @extends('adminmain')
 
+
+
 @section('content')
-    <!-- =============================================== -->
+
+
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Blank page
-                <small>it all starts here</small>
+                <i class=" glyphicon glyphicon-shopping-cart"></i>
+                Order
+                <small>advanced tables</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Examples</a></li>
-                <li class="active">Blank page</li>
+                <li><a href="#">Tables</a></li>
+                <li class="active">order</li>
             </ol>
         </section>
-
-        <!-- Main content -->
         <section class="content">
 
             <!-- Default box -->
@@ -43,20 +45,18 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>NAME</th>
+                                        <th>PICKUP_CITY</th>
+                                        <th>DROP_CITY</th>
+                                        <th>PICKUP_TIME</th>
                                         <th>PICKUP_DATE</th>
-                                        <th>PICKUP_LOCATION</th>
-                                        <th>DROP_LOCATION</th>
-                                        <th>EMAIL</th>
-                                        <th>CONTACT_NO</th>
-
+                                        <th>TRAVEL_TYPE</th>
                                     </tr>
                                     </thead>
 
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->booking_id}}
+                                                {{$inquiry->inquiry_id}}
                                             </td>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@
 
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->name}}
+                                                {{$inquiry->passenger_name}}
                                             </td>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_date}}
+                                                {{$inquiry->email}}
                                             </td>
                                         </div>
                                     </div>
@@ -81,28 +81,14 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_location}}
+                                                {{$inquiry->contact_no}}
                                             </td>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->drop_location}}
-                                            </td>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <td>
-                                                {{$booking->email}}
-                                            </td>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <td>
-                                                {{$booking->contact_no}}
+                                                {{$inquiry->message}}
                                             </td>
                                         </div>
                                     </div>
@@ -120,6 +106,8 @@
 
         </section>
         <!-- /.content -->
+
+
+
     </div>
-    <!-- /.content-wrapper -->
-@endsection
+        @endsection

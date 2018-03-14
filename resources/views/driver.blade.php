@@ -26,11 +26,14 @@
                     <div class="box-header">
                         <h3 class="box-title">Data Table With Full Features</h3>
                     </div>
+                    <div align="center">
+                        <a href="adddriver"><button type="button" class="btn btn-primary btn-lg">DRIVER</button></a>
+
+                    </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
 
-                            <a href="adddriver"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
                                 <th>FULL NAME</th>
@@ -56,7 +59,7 @@
                                 <td>{{$driver->city}}</td>
                                 <td>{{$driver->contact_no}}</td>
 
-                                <td> <i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;
+                                <td> <a href="{{route('viewdriver',['id'=>$driver->driver_id])}}"><i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;</a>
                                     <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
                                     <i class="fa fa-trash"></i></td>
 

@@ -8,13 +8,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Blank page
+              City
                 <small>it all starts here</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li><a href="#">Examples</a></li>
-                <li class="active">Blank page</li>
+                <li class="active">City</li>
             </ol>
         </section>
 
@@ -43,20 +43,18 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>NAME</th>
+                                        <th>PICKUP_CITY</th>
+                                        <th>DROP_CITY</th>
+                                        <th>PICKUP_TIME</th>
                                         <th>PICKUP_DATE</th>
-                                        <th>PICKUP_LOCATION</th>
-                                        <th>DROP_LOCATION</th>
-                                        <th>EMAIL</th>
-                                        <th>CONTACT_NO</th>
-
+                                        <th>TRAVEL_TYPE</th>
                                     </tr>
                                     </thead>
 
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->booking_id}}
+                                                {{$city->city_id}}
                                             </td>
                                         </div>
                                     </div>
@@ -65,7 +63,7 @@
 
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->name}}
+                                                {{$city->pickup_city}}
                                             </td>
                                         </div>
                                     </div>
@@ -73,7 +71,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_date}}
+                                                {{$city->drop_city}}
                                             </td>
                                         </div>
                                     </div>
@@ -81,31 +79,25 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->pickup_location}}
+                                                {{$city->pickup_time}}
                                             </td>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->drop_location}}
+                                                {{$city->pickup_date}}
                                             </td>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$booking->email}}
+                                                {{$city->travel_type}}
                                             </td>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <td>
-                                                {{$booking->contact_no}}
-                                            </td>
-                                        </div>
-                                    </div>
+
                                 </table>
                             </div>
                             <div class="col-md-6">

@@ -30,11 +30,13 @@
                         <div class="box-header">
                             <h3 class="box-title">Data Table With Full Features</h3>
                         </div>
+                        <div align="left">
+                            <a href="neworder"><button type="button" class="btn btn-primary btn-lg">ADD ORDER</button></a>
+                        </div>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <table id="example1" class="table table-bordered table-striped">
 
-                                <a href="neworder"><button type="button" class="btn">Add</button></a>
                                 <thead>
                                 <tr>
                                     <th>PICKUP CITY</th>
@@ -64,7 +66,9 @@
                                             <td>{{$orderdata->price}}</td>
                                             <td> {{$orderdata->driver_id}}</td>
                                             <td>{{$orderdata->payment_status}}</td>
-                                            <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
+                                            <td> <a href="{{route('vieworder',['id'=>$orderdata->order_id])}}"> <i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;</a>
+                                                <i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp;
+                                                <i class="fa fa-trash"></i></td>
                                         </tr>
                                     @endforeach
 

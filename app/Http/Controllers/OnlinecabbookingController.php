@@ -321,6 +321,41 @@ class OnlinecabbookingController extends Controller
         return view('viewbooking',['booking'=>$booking]);
     }
 
+    public function viewdriver($id)
+    {
+        $driver=Driver::where('driver_id',$id)->first();
+        return view('viewdriver',['driver'=>$driver]);
+    }
+
+    public function viewcar($id)
+    {
+        $car=Car::where('car_id',$id)->first();
+        return view('viewcar',['car'=>$car]);
+    }
+
+    public function viewCity($id)
+    {
+        $city=City::where('city_id',$id)->first();
+        return view('viewcity',['city'=>$city]);
+    }
+    public function viewadmin($id)
+    {
+        $admin=Admin::where('admin_id',$id)->first();
+        return view('viewadmin',['admin'=>$admin]);
+    }
+
+    public function vieworder($id)
+    {
+        $order=Order::where('order_id',$id)->first();
+        return view('vieworder',['order'=>$order]);
+    }
+
+    public function viewinquiry($id)
+    {
+        $inquiry=Inquiry::where('inquiry_id',$id)->first();
+        return view('viewinquiry',['inquiry'=>$inquiry]);
+    }
+
     public function paymentstore(Request $request)
     {
 //        dd($request);
