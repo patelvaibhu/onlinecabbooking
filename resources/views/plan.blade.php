@@ -42,25 +42,23 @@
                                     <th>CAR TYPE</th>
                                     <th>PRICE</th>
                                     <th>TOLL TAX</th>
+                                    <th>ACTION</th>
                                 </tr>
 
                                 </thead>
                                 <tbody>
-                                {{--@for($i=0;$i<5;$i++)--}}
+                               @foreach($plandata as $plan)
                                 <tr>
-                                    <td>Trident</td>
-                                    <td>Internet
-                                        Explorer 4.0
-                                    </td>
-                                    <td>Win 95+</td>
-                                    <td> 4</td>
-                                    <td>X</td>
-                                    <td> <i class="fa fa-eye"></i></td>
-                                    <td> <i class="fa fa-edit"></i></td>
-                                    <td> <i class="fa fa-trash"></i></td>
+                                    <td>{{$plan->pickup_city}}</td>
+                                    <td>{{$plan->drop_city}}</td>
+                                    <td>{{$plan->price}}</td>
+                                    <td>{{$plan->location}}</td>
+                                    <td>{{$plan->tolltax}}</td>
+
+                                    <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
 
                                 </tr>
-                                {{--@endfor--}}
+                               @endforeach
                                 <tfoot>
                                 <tr>
                                     <th>PICKUP CITY</th>
@@ -68,6 +66,8 @@
                                     <th>CAR TYPE</th>
                                     <th>PRICE</th>
                                     <th>TOLL TAX</th>
+                                    <th>ACTION</th>
+
                                 </tr>
                                 </tfoot>
                             </table>

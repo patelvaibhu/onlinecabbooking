@@ -33,35 +33,50 @@
                             <a href="adddriver"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
-                                <th>DRIVER_NAME</th>
-                                <th>EMAIL</th>
-                                <th>PASSWORD</th>
-                                <th>CONTACT_NO</th>
+                                <th>FULL NAME</th>
+                                <th>LICENCE NO</th>
+                                <th>ADHARCARD NO</th>
+                                <th>LECTION CARD</th>
+                                <th>ADDRESS</th>
+                                <th>CITY</th>
+                                <th>CONTACT NO</th>
+                                <th>ACTION</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Internet
-                                    Explorer 4.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td> 4</td>
 
-                                <td> <i class="fa fa-eye"></i></td>
-                                <td> <i class="fa fa-edit"></i></td>
-                                <td> <i class="fa fa-trash"></i></td>
+                            <tbody>
+
+                            @foreach($driverdata as $driver)
+                            <tr>
+                                <td>{{$driver->full_name}}</td>
+                                <td>{{$driver->license_no}}</td>
+                                <td>{{$driver->adharcard_no}}</td>
+                                <td>{{$driver->election_card}}</td>
+                                <td>{{$driver->address}}</td>
+                                <td>{{$driver->city}}</td>
+                                <td>{{$driver->contact_no}}</td>
+
+                                <td> <i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-trash"></i></td>
+
                             </tr>
+                            @endforeach
+
                             </tbody>
+                            {{--@endforeach--}}
+
                             {{--@endfor--}}
                             <tfoot>
 
                             <tr>
-                                <th>DRIVER_NAME</th>
-                                <th>EMAIL</th>
-                                <th>PASSWORD</th>
-                                <th>CONTACT_NO</th>
-
+                                <th>FULL NAME</th>
+                                <th>LICENCE NO</th>
+                                <th>ADHARCARD NO</th>
+                                <th>LECTION CARD</th>
+                                <th>ADDRESS</th>
+                                <th>CITY</th>
+                                <th>CONTACT NO</th>
                             </tr>
                             </tfoot>
                         </table>

@@ -24,15 +24,15 @@
 
             <div class="box-body" style="font-size: large">
                 <label>pickup City</label>
-                <input type="text"  name="pickup_city" class="form-control" id="usr" placeholder="First name">
+                <input type="text"  name="pickup_city" class="form-control" id="usr" placeholder="Pickup city">
                 <label>Drop City</label>
-                <input type="text" class="form-control" name="drop_city" id="usr" placeholder="Lirst name">
+                <input type="text" class="form-control" name="drop_city" id="usr" placeholder="Drop city">
                 <label>Price</label>
-                <input type="text" class="form-control" id="usr"  name="price" placeholder="Email">
+                <input type="text" class="form-control" id="usr"  name="price" placeholder="Price">
                 <label>Location</label>
-                <input type="text" class="form-control"  name="location" id="usr" placeholder="Contact no">
+                <input type="text" class="form-control"  name="location" id="usr" placeholder="Location">
                 <label>Tolltax</label>
-                <input type="text" class="form-control"  name="tolltax" id="usr" placeholder="Contact no">
+                <input type="text" class="form-control"  name="tolltax" id="usr" placeholder="Toll Tax">
                     <div align="center">
                         <button type="submit" class="btn btn-info">ADD PLAN</button>
 

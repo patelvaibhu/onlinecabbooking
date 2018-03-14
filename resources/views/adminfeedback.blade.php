@@ -39,24 +39,24 @@
                                 <th>EMAIL</th>
                                 <th>CONTACT_NO</th>
                                 <th>MESSAGE</th>
+                                <th>ACTION</th>
                             </tr>
 
                             </thead>
                             <tbody>
-
+                            @foreach($Feedbackdata as $feedback)
                             <tr>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Trident</td>
+                                <td>{{$feedback->firstname}}</td>
+                                <td>{{$feedback->lastname}}</td>
+                                <td>{{$feedback->email}}</td>
+                                <td>{{$feedback->contact_no}}</td>
+                                <td>{{$feedback->message}}</td>
 
 
-                                <td> <i class="fa fa-eye"></i></td>
-                                <td> <i class="fa fa-edit"></i></td>
-                                <td> <i class="fa fa-trash"></i></td>
+                                <td> <i class="fa fa-eye"></i>&nbsp;&nbsp;<i class="fa fa-edit"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
 
-                            </tr>
+                             </tr>
+                            @endforeach
 
                             <tfoot>
                             <tr>
@@ -65,6 +65,8 @@
                                 <th>EMAIL</th>
                                 <th>CONTACT_NO</th>
                                 <th>MESSAGE</th>
+                                <th>ACTION</th>
+
                             </tr>
                             </tfoot>
                         </table>
@@ -87,4 +89,11 @@
 
 </div>
 
+@endsection
+@section('js')
+    <script>
+        $(function () {
+            $('#example1').DataTable()
+        })
+    </script>
 @endsection

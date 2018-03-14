@@ -1,112 +1,78 @@
 
-{{--@extends('adminmain')--}}
+@extends('adminmain')
 
+@section('content')
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+              City
+                <small>City Details</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Welcome City</li>
+            </ol>
+        </section>
 
-{{--@section('content')--}}
+        <section class="content">
+            <form method="post" action="{{Route('citystore')}}">
+                {{csrf_field()}}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-2">
 
+                            </div>
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Pickup City</label>
+                                        <input type="text" placeholder="pickup_city" name="pickup_city" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Drop City</label>
+                                        <input type="text" placeholder="Drop City" name="drop_city" class="form-control" style="font-size: large">
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Pickup Time</label>
+                                        <input type="time" placeholder="Pickup Time" name="pickup_time" class="form-control" style="font-size: large">
 
+                                        <div class="form-group" style="font-size: x-large">
+                                            <label>Pick Up Date</label>
+                                            <input type="date" placeholder="Pick Up Date" name="pickup_date" class="form-control" style="font-size: large">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="font-size: x-large">
+                                        <label>Travel Type</label>
+                                        <select class="form-control" style="font-size: large" placeholder="Travel Type" name="travel_type">
+                                            <option>Petrol</option>
+                                            <option>Diesel</option>
+                                        </select>
+                                    </div>
+                                    <div align="center" >
+                                        <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
+                                        {{--<button type="button" class="btn btn-block btn-primary btn-flat">Primary</button>--}}
+                                    </div>
 
-    {{--<!-- Content Wrapper. Contains page content -->--}}
-    {{--<div class="content-wrapper">--}}
-        {{--<label>pickup city</label>--}}
-        {{--<input type="text"  name="pickup_city" class="form-control" id="usr" placeholder="pickup City">--}}
-        {{--<div class="form-group">--}}
-            {{--<label for="sel1">Pickup City:</label>--}}
-            {{--<select class="form-control" id="sel1">--}}
-                {{--<option>Vadodara</option>--}}
-                {{--<option>Vasad</option>--}}
-                {{--<option>Anand</option>--}}
-                {{--<option>Ahemdabad</option>--}}
-            {{--</select>--}}
-        {{--</div>--}}
-    {{--</div>--}}
+                                </form>
 
-    {{--@endsection--}}
+                                <div class="col-md-2">
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    {{--<div class="box-body" style="font-size: large">--}}
 
-
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>City</title>
-    <!-- metatags-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Sports Camp Registration Form a Flat Responsive Widget,Login form widgets, Sign up Web 	forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-        function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- Meta tag Keywords -->
-    <!-- css files -->
-    <link rel="stylesheet" href="admin/city/css/jquery-ui.css"/>
-    <link href="admin/city/css/style.css" rel="stylesheet" type="text/css" media="all"/><!--stylesheet-css-->
-    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
-
-    <!-- //css files -->
-</head>
-<body style="background-image: url('admin/city/images/city.jpg')">
-<h1>City</h1>
-<div class="w3l-main">
-    <div class="w3l-from">
-
-        <form  method="post" action="{{Route('citystore')}}">
-        {{csrf_field()}}
-
-                <div class="clear"></div>
-                <div class="pickupcity">
-                    <label class="head">Pickup City<span class="w3l-star"> * </span></label>
-                    <select class="form-control"  name="pickup_city" required="">
-                        <option>Vadodara</option>
-                        <option>Vasad</option>
-                        <option>Anand</option>
-                        <option>Ahemdabad</option>
-                    </select>
+                    {{--</div>--}}
                 </div>
-                <div class="pickupcity">
-                    <label class="head">Drop City<span class="w3l-star"> * </span></label>
-                    <select class="form-control" name="drop_city" required="">
-                        <option>vadodara</option>
-                        <option>Vasad</option>
-                        <option>Anand</option>
-                        <option>Ahemdabad</option>
-                    </select>
-                </div>
-                <div class="clear"></div>
-
-            <div class="w3l-num">
-                <label class="head">PICK UP TIME<span class="w3l-star"> * </span></label>
-                <input type="text"  name="pickup_time" placeholder="" required="">
-            </div>
-            <div class="w3l-date">
-                <label class="head">PICK UP DATE<span class="w3l-star"> * </span></label>
-                <div class="styled-input">
-                    <input class="date" id="datepicker" name="pickup_date" type="text" value="MM/DD/YYYY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MM/DD/YYYY';}" required="">
-                </div>
-            </div>
-            <div class="w3l-sym">
-                <label class="head"  style=" margin: 0px -150px 10px">TRAVEL TYPE<span class="w3l-star"> * </span></label>
-                <input type="text" name="travel_type" placeholder="" required=" "    style=" margin: 0px -150px 10px;">
-            </div>
-
-                <div class="btn">
-                    <input type="submit" name="submit" value="Submit" style="background-color: #0a0a0a ;"/>
-                </div>
-
-            <div class="clear"></div>
-        </form>
+            </form>
+        </section>
+        <!-- /.content -->
     </div>
-</div>
-<!-- Calendar -->
-<script>
-    $(function() {
-        $( "#datepicker,#datepicker1" ).datepicker();
-    });
-</script>
-<!-- //Calendar -->
 
-</body>
-</html>
+
+@endsection

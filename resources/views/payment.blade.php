@@ -39,13 +39,15 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($Paymentdata as $payment)
                             <tr>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Trident</td>
+                                <td>{{$payment->car_name}}</td>
+                                <td>{{$payment->email}}</td>
+                                <td>{{$payment->amount}}</td>
 
                                 <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
                             </tr>
+                                @endforeach
                             </tbody>
                             {{--@endfor--}}
                             <tfoot>

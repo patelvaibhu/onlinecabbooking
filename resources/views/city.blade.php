@@ -41,23 +41,23 @@
                                     <th>PICKUP TIME</th>
                                     <th>PICKUP DATE</th>
                                     <th>TRAVEL TYPE</th>
-                                    <th>Action</th>
+                                    <th>ACTION</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @foreach($CityData as $citidata)
                                 <tr>
-                                    <td>Trident</td>
-                                    <td>Internet
-                                        Explorer 4.0
-                                    </td>
-                                    <td>Win 95+</td>
-                                    <td> 4</td>
-                                    <td>X</td>
+                                    <td>{{$citidata->pickup_city}}</td>
+                                    <td>{{$citidata->drop_city}}</td>
+                                    <td>{{$citidata->pickup_time}}</td>
+                                    <td>{{$citidata->pickup_date}}</td>
+                                    <td>{{$citidata->travel_type}}</td>
                                     <td> <i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;
                                         <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
                                         <i class="fa fa-trash"></i></td>
 
                                 </tr>
+                                @endforeach
                                 </tbody>
                                 {{--@endfor--}}
                                     <tfoot>
@@ -68,7 +68,7 @@
                                     <th>PICKUP TIME</th>
                                     <th>PICKUP DATE</th>
                                     <th>TRAVEL TYPE</th>
-                                    <th>Action</th>
+                                    <th>ACTION</th>
                                 </tr>
                                 </tfoot>
                             </table>

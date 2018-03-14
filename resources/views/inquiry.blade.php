@@ -38,23 +38,22 @@
                                 <th>EMAIL</th>
                                 <th>CONTACT_NO</th>
                                 <th>MESSAGE</th>
+                                <th>ACTION</th>
 
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($inquirydata as $inquiry)
                             <tr>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Internet
-                                    Explorer 4.0
-                                </td>
+                                <td>{{$inquiry->passenger_name}}</td>
+                                <td>{{$inquiry->email}}</td>
+                                <td>{{$inquiry->contact_no}}</td>
+                                <td>{{$inquiry->message}}</td>
 
 
-                                <td> <i class="fa fa-eye"></i></td>
-                                <td> <i class="fa fa-edit"></i></td>
-                                <td> <i class="fa fa-trash"></i></td>
+                                <td><i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
                             </tr>
+                                @endforeach
                             </tbody>
                             {{--@endfor--}}
                             <tfoot>

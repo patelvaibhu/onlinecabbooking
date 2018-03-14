@@ -32,15 +32,12 @@ class OnlinecabbookingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function booking(Request $request)
     {
-
-        //dd('tets');
-
-
-//        return redirect('booking');
-       return view('booking');
+        return view('booking');
     }
+
     public function bookingstore(Request $request)
     {
 //       dd($request);
@@ -55,6 +52,13 @@ class OnlinecabbookingController extends Controller
         return redirect('booking');
 
     }
+    public function adminbooking()
+    {
+        $bookdata=Booking::get();
+
+        return view('adminbooking',['Bookdata'=>$bookdata]);
+    }
+
 
     public function contact()
     {
@@ -137,7 +141,8 @@ class OnlinecabbookingController extends Controller
     }
     public function user()
     {
-        return view('user');
+        $admin=Admin::get();
+        return view('user',['admindata'=>$admin]);
     }
     public function adminuser()
     {
@@ -153,7 +158,8 @@ class OnlinecabbookingController extends Controller
 
     public function inquiry()
     {
-        return view('inquiry');
+        $inquiry=Inquiry::get();
+        return view('inquiry',['inquirydata'=>$inquiry]);
     }
     public function admininquiry()
     {
@@ -181,7 +187,8 @@ class OnlinecabbookingController extends Controller
 
     public function driver()
     {
-        return view('driver');
+        $driver=Driver::get();
+        return view('driver',['driverdata'=>$driver]);
     }
 
     public function driverstore(Request $request)
@@ -202,8 +209,8 @@ class OnlinecabbookingController extends Controller
 
     public function city()
     {
-        //dd('tets');
-        return view('city');
+       $citydata=City::get();
+        return view('city',['CityData'=>$citydata]);
     }
     public function addcity()
     {
@@ -223,11 +230,8 @@ class OnlinecabbookingController extends Controller
     }
     public function plan()
     {
-        return view('plan');
-    }
-    public function adminbooking()
-    {
-        return view('adminbooking');
+        $plan=Plan::get();
+        return view('plan',['plandata'=>$plan]);
     }
 
     public function adminplan()
@@ -236,7 +240,8 @@ class OnlinecabbookingController extends Controller
     }
     public function adminfeedback()
     {
-        return view('adminfeedback');
+        $feedback=Feedback::get();
+        return view('adminfeedback',['Feedbackdata'=>$feedback]);
     }
 
     public function addpayment()
@@ -283,7 +288,8 @@ class OnlinecabbookingController extends Controller
 
     public function order()
     {
-        return view('order');
+        $orderData=Order::get();
+        return view('order',['OrderData'=>$orderData]);
     }
     public function neworder()
     {
@@ -292,17 +298,27 @@ class OnlinecabbookingController extends Controller
 
     public function car()
     {
-        return view('car');
+        $car=Car::get();
+        return view('car',['CarData'=>$car]);
     }
+
 
     public function passenger()
     {
-        return view('passenger');
+        $passenger=Passenger::get();
+        return view('passenger',['Passenger'=>$passenger]);
     }
 
     public function payment()
     {
-        return view('payment');
+        $payment=Payment::get();
+        return view('payment',['Paymentdata'=>$payment]);
+    }
+
+    public function viewbooking($id)
+    {
+        $booking=Booking::where('booking_id',$id)->first();
+        return view('viewbooking',['booking'=>$booking]);
     }
 
     public function paymentstore(Request $request)

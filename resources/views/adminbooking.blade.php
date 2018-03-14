@@ -31,7 +31,7 @@
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
 
-                            <a href="booking"><button  type="button" class="btn" align="right">Add</button></a>
+                            <a href="userbooking"><button  type="button" class="btn" align="right">Add</button></a>
                             <thead>
                             <tr>
                                 <th>NAME</th>
@@ -40,26 +40,26 @@
                                 <th>DROP LOCATION</th>
                                 <th>EMAIL</th>
                                 <th>CONTACT_NO</th>
+                                <th>ACTION</th>
                             </tr>
 
                             </thead>
                             <tbody>
-
+                            @foreach($Bookdata as $bookdata)
                                 <tr>
-                                    <td>Trident</td>
-                                    <td>Trident</td>
-                                    <td>Internet
-                                        Explorer 4.0
-                                    </td>
-                                    <td>Win 95+</td>
-                                    <td> 4</td>
-                                    <td>X</td>
-
-                                    <td> <i class="fa fa-eye"></i></td>
-                                    <td> <i class="fa fa-edit"></i></td>
-                                    <td> <i class="fa fa-trash"></i></td>
+                                    <td>{{$bookdata->name}}</td>
+                                    {{--<td>{{$orderdata->name}}</td>--}}
+                                    <td>{{$bookdata->pickup_date}}</td>
+                                    <td>{{$bookdata->pickup_location}}</td>
+                                    <td>{{$bookdata->drop_location}}</td>
+                                    <td>{{$bookdata->email}}</td>
+                                    <td>{{$bookdata->contact_no}}</td>
+                                    <td><a href="{{route('viewbooking',['id'=>$bookdata->booking_id])}}"><i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
 
                                 </tr>
+
+                            @endforeach
+
 
                             <tfoot>
                             <tr>
@@ -69,6 +69,8 @@
                                 <th>DROP LOCATION</th>
                                 <th>EMAIL</th>
                                 <th>CONTACT_NO</th>
+                                <th>ACTION</th>
+
                             </tr>
                             </tfoot>
                         </table>

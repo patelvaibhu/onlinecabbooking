@@ -39,19 +39,21 @@
                                 <th>EMAIL</th>
                                 <th>PASSWORD</th>
                                 <th>CONTECT_NO</th>
+                                <th>ACTION</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Trident</td>
-                                <td>Trident</td>
+                            @foreach($admindata as $admin)
 
-                                <td> <i class="fa fa-eye"></i></td>
-                                <td> <i class="fa fa-edit"></i></td>
-                                <td> <i class="fa fa-trash"></i></td>
+                                <tr>
+                                    <td>{{$admin->admin_name}}</td>
+                                    <td>{{$admin->email}}</td>
+                                    <td>{{$admin->password}}</td>
+                                    <td>{{$admin->contact_no}}</td>
+
+                                <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
                             </tr>
+                                @endforeach
                             </tbody>
                             {{--@endfor--}}
                             <tfoot>
@@ -61,6 +63,7 @@
                                 <th>EMAIL</th>
                                 <th>PASSWORD</th>
                                 <th>CONTECT_NO</th>
+                                <th>ACTION</th>
                             </tr>
                             </tfoot>
                         </table>
@@ -82,4 +85,11 @@
 </div>
 
 </div>
+@endsection
+@section('js')
+    <script>
+        $(function () {
+            $('#example1').DataTable()
+        })
+    </script>
 @endsection

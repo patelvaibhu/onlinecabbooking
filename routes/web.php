@@ -19,13 +19,10 @@ Route::get('/', function () {
 Route::get('index','OnlinecabbookingController@index')->name('index');
 
 Route::get('booking','OnlinecabbookingController@booking')->name('booking');//booking
-
 Route::post('bookingstore','OnlinecabbookingController@bookingstore')->name('bookingstore');//bookingstore
-
-
-
-
 Route::get('adminbooking','OnlinecabbookingController@adminbooking')->name('adminbooking');
+Route::get('viewbooking/{id}','OnlinecabbookingController@viewbooking')->name('viewbooking');
+
 
 Route::get('contactus','OnlinecabbookingController@contact')->name('contactus');//contact form
 Route::post('contactusstore','OnlinecabbookingController@contactusstore')->name('contactusstore');//contact store

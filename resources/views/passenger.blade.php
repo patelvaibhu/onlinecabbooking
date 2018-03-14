@@ -32,43 +32,40 @@
                             <a href="newpassenger"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
-                                <th>PASSENGER_NAME</th>
                                 <th>FULL_NAME</th>
                                 <th>BIRTH_DATE</th>
                                 <th>EMAIL</th>
                                 <th>PASSWORD</th>
                                 <th>ADDRESS</th>
                                 <th>CONTACT_NO</th>
+                                <th>ACTION</th>
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($Passenger as $passenger)
                             <tr>
-                                <td>Trident</td>
-                                <td>Internet
-                                    Explorer 4.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td> 4</td>
-                                <td> 4</td>
-                                <td> 4</td>
-                                <td> 4</td>
+                                <td>{{$passenger->full_name}}</td>
+                                <td>{{$passenger->birth_date}}</td>
+                                <td>{{$passenger->email}}</td>
+                                <td>{{$passenger->password}}</td>
+                                <td>{{$passenger->address}}</td>
+                                <td>{{$passenger->contact_no}}</td>
 
-                                <td> <i class="fa fa-eye"></i></td>
-                                <td> <i class="fa fa-edit"></i></td>
-                                <td> <i class="fa fa-trash"></i></td>
+                                <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
                             </tr>
+                                @endforeach
                             </tbody>
                             {{--@endfor--}}
                             <tfoot>
 
                             <tr>
-                                <th>PASSENGER_NAME</th>
                                 <th>FULL_NAME</th>
                                 <th>BIRTH_DATE</th>
                                 <th>EMAIL</th>
                                 <th>PASSWORD</th>
                                 <th>ADDRESS</th>
                                 <th>CONTACT_NO</th>
+                                <th>ACTION</th>
 
                             </tr>
                             </tfoot>

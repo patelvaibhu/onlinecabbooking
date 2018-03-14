@@ -35,34 +35,32 @@
                             <a href="newcar"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
-                                <th>DRIVER_NAME</th>
-                                <th>EMAIL</th>
-                                <th>PASSWORD</th>
-                                <th>CONTACT_NO</th>
-                                <th>Action</th>
+                                <th>CITY NAME</th>
+                                <th>LOCATION</th>
+                                <th>DATE TIME</th>
+                                <th>ACTION</th>
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($CarData as $car)
                             <tr>
-                                <td>Trident</td>
-                                <td>Internet
-                                    Explorer 4.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td> 4</td>
+                                <td>{{$car->city_name}}</td>
+                                <td>{{$car->location}}</td>
+                                <td>{{$car->datetime}}</td>
 
                                 <td> <i class="fa fa-eye"></i> <i class="fa fa-edit"></i> <i class="fa fa-trash"></i></td>
                             </tr>
+
+                                @endforeach
                             </tbody>
                             {{--@endfor--}}
                             <tfoot>
 
                             <tr>
-                                <th>DRIVER_NAME</th>
-                                <th>EMAIL</th>
-                                <th>PASSWORD</th>
-                                <th>CONTACT_NO</th>
-                                <th>Action</th>
+                                <th>CITY NAME</th>
+                                <th>LOCATION</th>
+                                <th>DATE TIME</th>
+                                <th>ACTION</th>
                             </tr>
                             </tfoot>
                         </table>

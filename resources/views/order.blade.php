@@ -52,20 +52,22 @@
                                 </thead>
 
                                     <tbody>
-                                    <tr>
-                                        <td>Trident</td>
-                                        <td>Trident</td>
-                                        <td>Trident</td>
-                                        <td>Trident</td>
-                                        <td>Trident</td>
-                                        <td>Internet
-                                            Explorer 4.0
-                                        </td>
-                                        <td>Win 95+</td>
-                                        <td> 4</td>
-                                        <td>X</td>
-                                        <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
-                                    </tr>
+                                    @foreach($OrderData as $orderdata)
+                                        <tr>
+                                            <td>{{$orderdata->pickup_city}}</td>
+                                            <td>{{$orderdata->drop_city}}</td>
+                                            <td>{{$orderdata->pickup_date}}</td>
+                                            <td>{{$orderdata->pickup_address}}</td>
+                                            <td>{{$orderdata->drop_address}}</td>
+                                            <td>{{$orderdata->car_id}}
+                                            </td>
+                                            <td>{{$orderdata->price}}</td>
+                                            <td> {{$orderdata->driver_id}}</td>
+                                            <td>{{$orderdata->payment_status}}</td>
+                                            <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
+                                        </tr>
+                                    @endforeach
+
                                     </tbody>
                                 <tfoot>
 
