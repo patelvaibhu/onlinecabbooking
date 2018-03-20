@@ -20,6 +20,7 @@
         </ol>
     </section>
 
+
     <!-- Main content -->
     <section class="content">
         <div class="row">
@@ -28,11 +29,13 @@
                     <div class="box-header">
                         <h3 class="box-title">Data Table With Full Features</h3>
                     </div>
+                    <div align="">
+                        <a href="adminuser"><button type="button" class="btn btn-primary btn-lg">ADMIN</button></a>
+                    </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
 
-                            <a href="adminuser"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
                                 <th>ADMIN_NAME</th>
@@ -51,9 +54,9 @@
                                     <td>{{$admin->password}}</td>
                                     <td>{{$admin->contact_no}}</td>
 
-                                <td>  <a href="{{route('viewadmin',['id'=>$admin->admin_id])}}"><i class="fa fa-eye"></i></a>
-                                    <i class="fa fa-edit"></i>
-                                    <i class="fa fa-trash"></i></td>
+                                <td>  <a href="{{route('viewadmin',['id'=>$admin->admin_id])}}"><i class="fa fa-eye"></i></a>&nbsp;&nbsp;
+                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+                                    <a href="{{route('distroycar',['id'=>$admin->admin_id])}}"><i class="fa fa-trash"></i></a></td>
                             </tr>
                                 @endforeach
                             </tbody>

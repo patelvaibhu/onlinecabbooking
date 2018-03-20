@@ -67,8 +67,8 @@
                                             <td> {{$orderdata->driver_id}}</td>
                                             <td>{{$orderdata->payment_status}}</td>
                                             <td> <a href="{{route('vieworder',['id'=>$orderdata->order_id])}}"> <i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;</a>
-                                                <i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp;
-                                                <i class="fa fa-trash"></i></td>
+                                                <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+                                                <a href="{{route('distroyorder',['id'=>$orderdata->order_id])}}"><i class="fa fa-trash"></i></a></td>
                                         </tr>
                                     @endforeach
 

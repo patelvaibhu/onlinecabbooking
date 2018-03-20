@@ -25,11 +25,13 @@
                     <div class="box-header">
                         <h3 class="box-title">Data Table With Full Features</h3>
                     </div>
+                    <div>
+                        <a href="newpassenger"><button type="button" class="btn btn-primary btn-lg">PASSENGER</button></a>
+                    </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
 
-                            <a href="newpassenger"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
                                 <th>FULL_NAME</th>
@@ -51,7 +53,9 @@
                                 <td>{{$passenger->address}}</td>
                                 <td>{{$passenger->contact_no}}</td>
 
-                                <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
+                                <td><a href="{{route('viewpassenger',['id'=>$passenger->passenger_id])}}"> <i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{route('distroypassenger',['id'=>$passenger->passenger_id])}}"> <i class="fa fa-trash"></i></a></td>
                             </tr>
                                 @endforeach
                             </tbody>

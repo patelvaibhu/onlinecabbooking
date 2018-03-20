@@ -17,6 +17,7 @@
         </ol>
     </section>
 
+
     <!-- Main content -->
     <section class="content">
         <div class="row">
@@ -25,11 +26,13 @@
                     <div class="box-header">
                         <h3 class="box-title">Data Table With Full Features</h3>
                     </div>
+                    <div align="">
+                        <a href="adminuser"><button type="button" class="btn btn-primary btn-lg">PAYMENT</button></a>
+                    </div>
                     <!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
 
-                            <a href="addpayment"><button type="button" class="btn">Add</button></a>
                             <thead>
                             <tr>
                                 <th>CAR_TYPE</th>
@@ -45,7 +48,9 @@
                                 <td>{{$payment->email}}</td>
                                 <td>{{$payment->amount}}</td>
 
-                                <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
+                                <td> <a href="{{route('viewpayment',['id'=>$payment->payment_id])}}"> <i class="fa fa-eye"></i> </a>&nbsp;&nbsp;
+                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;
+                                    <a href="{{route('distroyplan',['id'=>$payment->payment_id])}}"><i class="fa fa-trash"></i></td>
                             </tr>
                                 @endforeach
                             </tbody>

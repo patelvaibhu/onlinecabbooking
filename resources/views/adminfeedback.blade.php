@@ -30,8 +30,6 @@
                     <!-- /.box-header -->
                     <div class="box-body">
                         <table id="example1" class="table table-bordered table-striped">
-
-                            <a href="contactus"><button  type="button" class="btn" align="right">Add</button></a>
                             <thead>
                             <tr>
                                 <th>FIRST NAME</th>
@@ -53,7 +51,8 @@
                                 <td>{{$feedback->message}}</td>
 
 
-                                <td> <i class="fa fa-eye"></i>&nbsp;&nbsp;<i class="fa fa-edit"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                <td><a href="{{route('viewfeedback',['id'=>$feedback->feedback_id])}}"> <i class="fa fa-eye"></i></a>&nbsp;&nbsp;
+                                    <a href="{{route('distroyfeedback',['id'=>$feedback->feedback_id])}}"><i class="fa fa-trash"></i></td>
 
                              </tr>
                             @endforeach

@@ -30,7 +30,7 @@
 
                     </div>
                     <div align="left">
-                        <a href="newcar"><button type="button" class="btn">Add New Car</button></a>
+                        <a href="newcar"><button type="button" class="btn btn-primary btn-lg">Add New Car</button></a>
 
                     </div>
                     <!-- /.box-header -->
@@ -54,7 +54,7 @@
 
                                 <td>  <a href="{{route('viewcar',['id'=>$car->car_id])}}"><i class="fa fa-eye"></i> &nbsp;&nbsp;</a>
                                     <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <i class="fa fa-trash"></i></td>
+                                    <a href="{{route('distroycar',['id'=>$car->car_id])}}"><i class="fa fa-trash"></i></a></td>
                             </tr>
 
                                 @endforeach

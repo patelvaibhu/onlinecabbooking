@@ -32,22 +32,41 @@ class OnlinecabbookingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function admin()
+    {
+
+        return view('adminindex');
+//        return view('admin');
+    }
+
+
+
+    public function adminuserstore(Request $request)
+    {
+//        dd($request);
+        Admin::create([
+            'admin_name'=>$request['admin_name'],
+            'email'=>$request['email'],
+            'password'=>$request['password'],
+            'contact_no'=>$request['contact_no']
+        ]);
+        return  redirect('adminuser');
+    }
 
     public function booking(Request $request)
     {
         return view('booking');
     }
-
     public function bookingstore(Request $request)
     {
 //       dd($request);
         Booking::create([
-           'name'=>$request['name'],
-           'pickup_date'=>$request['pickup_date'],
-           'pickup_location'=>$request['pickup_location'],
-           'drop_location'=>$request['drop_location'],
-           'email'=>$request['email_address'],
-           'contact_no'=>$request['contact_no']
+            'name'=>$request['name'],
+            'pickup_date'=>$request['pickup_date'],
+            'pickup_location'=>$request['pickup_location'],
+            'drop_location'=>$request['drop_location'],
+            'email'=>$request['email_address'],
+            'contact_no'=>$request['contact_no']
         ]);
         return redirect('booking');
 
@@ -58,13 +77,31 @@ class OnlinecabbookingController extends Controller
 
         return view('adminbooking',['Bookdata'=>$bookdata]);
     }
-
-
+    public function viewbooking($id)
+    {
+        $booking=Booking::where('booking_id',$id)->first();
+        return view('viewbooking',['booking'=>$booking]);
+    }
+    public function distroybooking($id)
+    {
+        $booking=Booking::where('booking_id',$id)->delete();
+        return redirect('adminbooking');
+    }
     public function contact()
     {
         //dd('tets');
         return view('contactus');
     }
+    public function user()
+    {
+        $admin=Admin::get();
+        return view('user',['admindata'=>$admin]);
+    }
+    public function adminuser()
+    {
+        return view('adminuser');
+    }
+
     public function contactusstore(Request $request)
     {
 //    dd($request);
@@ -78,17 +115,7 @@ class OnlinecabbookingController extends Controller
         ]);
         return redirect('contactus');
     }
-    public function adminuserstore(Request $request)
-    {
-//        dd($request);
-        Admin::create([
-            'admin_name'=>$request['admin_name'],
-            'email'=>$request['email'],
-            'password'=>$request['password'],
-            'contact_no'=>$request['contact_no']
-        ]);
-        return  redirect('adminuser');
-    }
+
     public function cars()
     {
 
@@ -131,22 +158,6 @@ class OnlinecabbookingController extends Controller
     {
         return view('login');
 
-    }
-
-    public function admin()
-    {
-
-        return view('adminindex');
-//        return view('admin');
-    }
-    public function user()
-    {
-        $admin=Admin::get();
-        return view('user',['admindata'=>$admin]);
-    }
-    public function adminuser()
-    {
-        return view('adminuser');
     }
 
     public function newcar()
@@ -234,6 +245,7 @@ class OnlinecabbookingController extends Controller
         return view('plan',['plandata'=>$plan]);
     }
 
+
     public function adminplan()
     {
         return view('adminplan');
@@ -315,10 +327,31 @@ class OnlinecabbookingController extends Controller
         return view('payment',['Paymentdata'=>$payment]);
     }
 
-    public function viewbooking($id)
+    public function viewpassenger($id)
     {
-        $booking=Booking::where('booking_id',$id)->first();
-        return view('viewbooking',['booking'=>$booking]);
+        $passenger=Passenger::where('passenger_id',$id)->first();
+        return view('viewpassenger',['passenger'=>$passenger]);
+    }
+    public function distroypassenger($id)
+    {
+        $passenger=Passenger::where('passenger_id',$id)->delete();
+        return redirect('passenger');
+    }
+
+    public function viewplan($id)
+    {
+        $plan=Plan::where('plan_id',$id)->first();
+        return view('viewplan',['plan'=>$plan]);
+    }
+    public function distroyplan($id)
+    {
+        $plan=Plan::where('plan_id',$id)->delete();
+        return redirect('plan');
+    }
+
+    public function distroyadmin($id)
+    {
+        $admin=Admin::where('admin_id',$id)->delete();
     }
 
     public function viewdriver($id)
@@ -326,11 +359,42 @@ class OnlinecabbookingController extends Controller
         $driver=Driver::where('driver_id',$id)->first();
         return view('viewdriver',['driver'=>$driver]);
     }
+    public function distroydriver($id)
+    {
+        $driver=Driver::where('driver_id',$id)->delete();
+        return redirect('driver');
+    }
 
+    public function viewpayment($id)
+    {
+        $payment=Payment::where('payment_id',$id)->first();
+        return view('viewpayment',['payment'=>$payment]);
+    }
+    public function distroypayment($id)
+    {
+        $payment=Payment::where('payment_id',$id)->delete();
+        return redirect('payment');
+    }
+
+    public function viewfeedback($id)
+    {
+        $feedback=Feedback::where('feedback_id',$id)->first();
+        return view('viewfeedback',['feedback'=>$feedback]);
+    }
+    public function distroyfeedback($id)
+    {
+        $feedback=Feedback::where('feedback_id',$id)->delete();
+        return redirect('adminfeedback');
+    }
     public function viewcar($id)
     {
         $car=Car::where('car_id',$id)->first();
         return view('viewcar',['car'=>$car]);
+    }
+    public function distroycar($id)
+    {
+        $car=Car::where('car_id',$id)->delete();
+        return redirect('car');
     }
 
     public function viewCity($id)
@@ -338,6 +402,13 @@ class OnlinecabbookingController extends Controller
         $city=City::where('city_id',$id)->first();
         return view('viewcity',['city'=>$city]);
     }
+    public function distroycity($id)
+    {
+        $city=City::where('city_id',$id)->delete();
+        return redirect('city');
+    }
+
+
     public function viewadmin($id)
     {
         $admin=Admin::where('admin_id',$id)->first();
@@ -349,11 +420,22 @@ class OnlinecabbookingController extends Controller
         $order=Order::where('order_id',$id)->first();
         return view('vieworder',['order'=>$order]);
     }
+    public function distroyorder($id)
+    {
+        $order=Order::where('order_id',$id)->delete();
+        return redirect('order');
+    }
 
     public function viewinquiry($id)
     {
         $inquiry=Inquiry::where('inquiry_id',$id)->first();
         return view('viewinquiry',['inquiry'=>$inquiry]);
+    }
+
+    public function distroyinquiry($id)
+    {
+        $inquiry=Inquiry::where('inquiry_id',$id)->delete();
+        return redirect('inquiry');
     }
 
     public function paymentstore(Request $request)

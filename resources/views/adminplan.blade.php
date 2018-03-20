@@ -1,47 +1,90 @@
-@extends('adminmain')
 
-@section('content')
-    <link rel="stylesheet" href="css/style.css">
+                {{--<label>Tolltax</label>--}}
+                {{--<input type="text" class="form-control"  name="tolltax" id="usr" placeholder="Toll Tax">--}}
+                    {{--<div align="center">--}}
+                        {{--<button type="submit" class="btn btn-info">ADD PLAN</button>--}}
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                Welcome to Admin
-                <small>start your work with Admin</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Welcome Admin</li>
-            </ol>
-        </section>
+            @extends('adminmain')
 
-        <!-- Main content -->
-        <section class="content">
-            <form method="post" action="{{Route('planstore')}}">
-            {{csrf_field()}}
+            @section('content')
+                <!-- Content Wrapper. Contains page content -->
+                <div class="content-wrapper">
+                    <!-- Content Header (Page header) -->
+                    <section class="content-header">
+                        <h1>
+                            Order
+                            <small>Order Details</small>
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li><a href="adminindex"><i class="fa fa-dashboard"></i> Home</a></li>
+                            <li><a href="order"><i class="fa fa-dashboard"></i>Order</a></li>
+                            <li class="active">Welcome Order</li>
+                        </ol>
+                    </section>
 
-            <div class="box-body" style="font-size: large">
-                <label>pickup City</label>
-                <input type="text"  name="pickup_city" class="form-control" id="usr" placeholder="Pickup city">
-                <label>Drop City</label>
-                <input type="text" class="form-control" name="drop_city" id="usr" placeholder="Drop city">
-                <label>Price</label>
-                <input type="text" class="form-control" id="usr"  name="price" placeholder="Price">
-                <label>Location</label>
-                <input type="text" class="form-control"  name="location" id="usr" placeholder="Location">
-                <label>Tolltax</label>
-                <input type="text" class="form-control"  name="tolltax" id="usr" placeholder="Toll Tax">
-                    <div align="center">
-                        <button type="submit" class="btn btn-info">ADD PLAN</button>
+                    <section class="content">
+                        <form method="post" action="{{Route('planstore')}}">
+                            {{csrf_field()}}
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="col-md-2">
 
-                    </div>
-            </div>
-            </form>
-        </section>
-        <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+                                        </div>
+                                        <div class="col-md-8">
+                                            <form>
+                                                <div class="form-group" style="font-size: x-large">
+                                                    <label>pickup City</label>
+                                                    <select class="form-control" style="font-size: large"  name="pickup_city">
+                                                        <option>Vadodara</option>
+                                                        <option>Vasad</option>
+                                                        <option>Anand</option>
+                                                        <option>Ahemdabad</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group" style="font-size: x-large">
+                                                    <label>Drop City</label>
+                                                    <select class="form-control" style="font-size: large"  name="drop_city">
+                                                        <option>Vadodara</option>
+                                                        <option>Vasad</option>
+                                                        <option>Anand</option>
+                                                        <option>Ahemdabad</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group" style="font-size: x-large">
+                                                    <label>Price</label>
+                                                    <input type="text" placeholder="Price" name="price" class="form-control" style="font-size: large">
+                                                </div>
+                                                <div class="form-group" style="font-size: x-large">
+                                                    <label>Location</label>
+                                                    <input type="text" placeholder="Location" name="location" class="form-control" style="font-size: large">
+                                                </div>
+                                                <div class="form-group" style="font-size: x-large">
+                                                    <label>Tolltax</label>
+                                                    <input type="text" placeholder="Tolltax" name="tolltax" class="form-control" style="font-size: large">
+                                                </div>
+                                                <div align="center" >
+                                                    <button type="submit" class="btn btn-primary btn-lg">ADD PLAN</button>
+                                                    {{--<button type="button" class="btn btn-block btn-primary btn-flat">Primary</button>--}}
+                                                </div>
 
-@endsection
+                                            </form>
+
+                                            <div class="col-md-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {{--<div class="box-body" style="font-size: large">--}}
+
+                                {{--</div>--}}
+                            </div>
+                        </form>
+                    </section>
+                    <!-- /.content -->
+                </div>
+
+
+            @endsection

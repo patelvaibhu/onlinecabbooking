@@ -30,11 +30,13 @@
                         <div class="box-header">
                             <h3 class="box-title">PLAN</h3>
                         </div>
+                        <div align="">
+                            <a href="adminuser"><button type="button" class="btn btn-primary btn-lg">PLAN</button></a>
+                        </div>
                         <!-- /.box-header -->
                         <div class="box-body">
                             <table id="example1" class="table table-bordered table-striped">
 
-                                <a href="adminplan"><button  type="button" class="btn" align="right">Add</button></a>
                                 <thead>
                                 <tr>
                                     <th>PICKUP CITY</th>
@@ -55,7 +57,9 @@
                                     <td>{{$plan->location}}</td>
                                     <td>{{$plan->tolltax}}</td>
 
-                                    <td> <i class="fa fa-eye"></i><i class="fa fa-edit"></i><i class="fa fa-trash"></i></td>
+                                    <td> <a href="{{route('viewplan',['id'=>$plan->plan_id])}}"> <i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;
+                                        <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+                                        <a href="{{route('distroyplan',['id'=>$plan->plan_id])}}"><i class="fa fa-trash"></i></a></td>
 
                                 </tr>
                                @endforeach

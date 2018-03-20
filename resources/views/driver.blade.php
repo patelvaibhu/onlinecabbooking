@@ -61,7 +61,7 @@
 
                                 <td> <a href="{{route('viewdriver',['id'=>$driver->driver_id])}}"><i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;</a>
                                     <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
-                                    <i class="fa fa-trash"></i></td>
+                                    <a href="{{route('distroydriver',['id'=>$driver->driver_id])}}"> <i class="fa fa-trash"></i></a></td>
 
                             </tr>
                             @endforeach

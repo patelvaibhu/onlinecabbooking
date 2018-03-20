@@ -54,7 +54,7 @@
                                 <td>
                                     <a href="{{route('viewinquiry',['id'=>$inquiry->inquiry_id])}}"><i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;
                                     <i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp;
-                                    <i class="fa fa-trash"></i></td>
+                                    <a href="{{route('distroyinquiry',['id'=>$inquiry->inquiry_id])}}"> <i class="fa fa-trash"></i></a></td>
                             </tr>
                                 @endforeach
                             </tbody>

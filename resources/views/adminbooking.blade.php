@@ -53,7 +53,8 @@
                                     <td>{{$bookdata->drop_location}}</td>
                                     <td>{{$bookdata->email}}</td>
                                     <td>{{$bookdata->contact_no}}</td>
-                                    <td><a href="{{route('viewbooking',['id'=>$bookdata->booking_id])}}"><i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                    <td><a href="{{route('viewbooking',['id'=>$bookdata->booking_id])}}"><i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="{{route('distroybooking',['id'=>$bookdata->booking_id])}}"><i class="fa fa-trash"></i></a></td>
 
                                 </tr>
 
