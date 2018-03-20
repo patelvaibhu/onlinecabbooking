@@ -52,7 +52,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <td>
-                                                {{$car->car_id}}
+                                                {{$car->id}}
                                             </td>
                                         </div>
                                     </div>

@@ -39,6 +39,7 @@
 
                             <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>CITY NAME</th>
                                 <th>LOCATION</th>
                                 <th>DATE TIME</th>
@@ -48,13 +49,14 @@
                             <tbody>
                             @foreach($CarData as $car)
                             <tr>
+                                <td>{{$car->id}}</td>
                                 <td>{{$car->city_name}}</td>
                                 <td>{{$car->location}}</td>
                                 <td>{{$car->datetime}}</td>
 
-                                <td>  <a href="{{route('viewcar',['id'=>$car->car_id])}}"><i class="fa fa-eye"></i> &nbsp;&nbsp;</a>
-                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="{{route('distroycar',['id'=>$car->car_id])}}"><i class="fa fa-trash"></i></a></td>
+                                <td>  <a href="{{route('viewcar',['id'=>$car->id])}}"><i class="fa fa-eye"></i></a>
+                                    <a href="{{route('editcar',['id'=>$car->id])}}"><i class="fa fa-pencil"></i></a>
+                                    <a href="{{route('distroycar',['id'=>$car->id])}}"><i class="fa fa-trash"></i></a></td>
                             </tr>
 
                                 @endforeach

@@ -34,6 +34,9 @@ Route::post('adminuserstore','OnlinecabbookingController@adminuserstore')->name(
 Route::get('user','OnlinecabbookingController@user')->name('user');// admin data
 Route::get('viewadmin/{id}','OnlinecabbookingController@viewadmin')->name('viewadmin');
 Route::get('distroycar/{id}','OnlinecabbookingController@distroycar')->name('distroycar');
+Route::get('editcar/{id}','OnlinecabbookingController@editcar')->name('editcar');
+Route::post('updatecar','OnlinecabbookingController@updatecar')->name('updatecar');
+
 
 
 

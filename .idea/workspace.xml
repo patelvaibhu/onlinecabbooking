@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e90798-78c2-469b-a128-fe7313af5c4d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/viewfeedback.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/viewpassenger.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/viewpayment.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/viewplan.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/editcar.blade.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OnlinecabbookingController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/OnlinecabbookingController.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminbooking.blade.php" afterPath="$PROJECT_DIR$/resources/views/adminbooking.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminfeedback.blade.php" afterPath="$PROJECT_DIR$/resources/views/adminfeedback.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminplan.blade.php" afterPath="$PROJECT_DIR$/resources/views/adminplan.blade.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_03_07_093037_create_cars_table.php" afterPath="$PROJECT_DIR$/database/migrations/2018_03_07_093037_create_cars_table.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/car.blade.php" afterPath="$PROJECT_DIR$/resources/views/car.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/city.blade.php" afterPath="$PROJECT_DIR$/resources/views/city.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/driver.blade.php" afterPath="$PROJECT_DIR$/resources/views/driver.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/inquiry.blade.php" afterPath="$PROJECT_DIR$/resources/views/inquiry.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newpassenger.blade.php" afterPath="$PROJECT_DIR$/resources/views/newpassenger.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/order.blade.php" afterPath="$PROJECT_DIR$/resources/views/order.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/passenger.blade.php" afterPath="$PROJECT_DIR$/resources/views/passenger.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/payment.blade.php" afterPath="$PROJECT_DIR$/resources/views/payment.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plan.blade.php" afterPath="$PROJECT_DIR$/resources/views/plan.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user.blade.php" afterPath="$PROJECT_DIR$/resources/views/user.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/viewcar.blade.php" afterPath="$PROJECT_DIR$/resources/views/viewcar.blade.php" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,12 +25,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OnlinecabbookingController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OnlinecabbookingController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="310" column="0" lean-forward="true" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018_03_07_093037_create_cars_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_07_093037_create_cars_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editcar.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/editcar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="21" column="79" lean-forward="false" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+              <folding>
+                <element signature="e#1843#1869#0#HTML" expanded="true" />
+                <marker date="1521525758295" expanded="true" signature="10:21" ph="..." />
+                <marker date="1521525758295" expanded="true" signature="33:42" ph="..." />
+                <marker date="1521525758295" expanded="true" signature="592:610" ph="..." />
+                <marker date="1521525758295" expanded="true" signature="633:645" ph="..." />
+                <marker date="1521525758295" expanded="true" signature="720:728" ph="..." />
+                <marker date="1521525758295" expanded="true" signature="1353:1368" ph="..." />
+                <marker date="1521525758295" expanded="true" signature="1721:1735" ph="..." />
+                <marker date="1521525758295" expanded="true" signature="2091:2105" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="car.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/car.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="67" column="50" lean-forward="false" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+              <folding>
+                <marker date="1521525720740" expanded="true" signature="10:21" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="34:43" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="1650:1666" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="1739:1747" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="1793:1808" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="1854:1868" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="1914:1928" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="1986:2019" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="2100:2115" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="2100:2133" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="2217:2253" ph="..." />
+                <marker date="1521525720740" expanded="true" signature="3156:3160" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewcar.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/viewcar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+              <folding>
+                <marker date="1521525844722" expanded="true" signature="9:20" ph="..." />
+                <marker date="1521525844722" expanded="true" signature="32:41" ph="..." />
+                <marker date="1521525844722" expanded="true" signature="2274:2282" ph="..." />
+                <marker date="1521525844722" expanded="true" signature="2644:2659" ph="..." />
+                <marker date="1521525844722" expanded="true" signature="3020:3034" ph="..." />
+                <marker date="1521525844722" expanded="true" signature="3395:3409" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +129,6 @@
       <find>vale</find>
       <find>inq</find>
       <find>city</find>
-      <find>car</find>
       <find>drive</find>
       <find>passe</find>
       <find>pla</find>
@@ -89,6 +155,7 @@
       <find>viewdriver</find>
       <find>viewfee</find>
       <find>dele</find>
+      <find>car</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/feedback.php" />
         <option value="$PROJECT_DIR$/resources/views/contactus.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_03_12_052015_create_feedback_table.php" />
         <option value="$PROJECT_DIR$/app/Feedback.php" />
@@ -118,8 +184,6 @@
         <option value="$PROJECT_DIR$/resources/views/viewcity.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/addcity.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/newcar.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_03_07_093037_create_cars_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/viewcar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/adminuser.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewadmin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/neworder.blade.php" />
@@ -136,7 +200,6 @@
         <option value="$PROJECT_DIR$/resources/views/viewpayment.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewfeedback.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/car.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/order.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/inquiry.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/driver.blade.php" />
@@ -146,8 +209,12 @@
         <option value="$PROJECT_DIR$/resources/views/plan.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/payment.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/adminfeedback.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/OnlinecabbookingController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_03_07_093037_create_cars_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/car.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/editcar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/viewcar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/OnlinecabbookingController.php" />
       </list>
     </option>
   </component>
@@ -233,7 +300,7 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1260" />
@@ -277,11 +344,6 @@
             <path>
               <item name="onlinecabbooking" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlinecabbooking" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="onlinecabbooking" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlinecabbooking" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="onlinecabbooking" type="b2602c69:ProjectViewProjectNode" />
@@ -344,15 +406,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\onlinecabbooking" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\onlinecabbooking\database\migrations" />
       <recent name="C:\xampp\htdocs\onlinecabbooking\asset\images\book" />
       <recent name="C:\xampp\htdocs\onlinecabbooking\book\images" />
       <recent name="C:\xampp\htdocs\onlinecabbooking\admin\plugins\jvectormap" />
       <recent name="C:\xampp\htdocs\onlinecabbooking\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\onlinecabbooking" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -430,15 +492,15 @@
       <workItem from="1521089417120" duration="9044000" />
       <workItem from="1521180205050" duration="3849000" />
       <workItem from="1521199158145" duration="888000" />
-      <workItem from="1521518927378" duration="91000" />
+      <workItem from="1521518927378" duration="8259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289944000" />
+    <option name="totallyTimeSpent" value="298112000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21328124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -449,7 +511,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67632025" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -496,20 +558,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/adminmain.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/book/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -553,24 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_07_093037_create_cars_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/adminuser.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/viewcar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -627,13 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/newcar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -731,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/viewpassenger.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="95" column="43" lean-forward="true" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_12_054255_create_feedback_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -757,13 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="53" column="65" lean-forward="true" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/car.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="56" column="122" lean-forward="false" selection-start-line="56" selection-start-column="122" selection-end-line="56" selection-end-column="122" />
         </state>
       </provider>
     </entry>
@@ -834,20 +847,135 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="65" lean-forward="false" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
+          <folding>
+            <marker date="1521183952797" expanded="true" signature="10:21" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="34:43" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="1539:1565" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="1638:1658" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="1704:1723" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="1769:1785" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="1831:1852" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="1898:1916" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="1973:2025" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="2119:2174" ph="..." />
+            <marker date="1521183952797" expanded="true" signature="3085:3089" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OnlinecabbookingController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/viewpassenger.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <marker date="1521091990474" expanded="true" signature="9:20" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="32:41" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="2479:2503" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="2865:2886" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="3247:3269" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="3630:3647" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="4007:4027" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="4387:4406" ph="..." />
+            <marker date="1521091990474" expanded="true" signature="4766:4788" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Car.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/newcar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding>
+            <marker date="1521013220566" expanded="true" signature="10:21" ph="..." />
+            <marker date="1521013220566" expanded="true" signature="33:42" ph="..." />
+            <marker date="1521013220566" expanded="true" signature="595:613" ph="..." />
+            <marker date="1521013220566" expanded="true" signature="636:648" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/car.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="400" column="5" lean-forward="false" selection-start-line="400" selection-start-column="5" selection-end-line="400" selection-end-column="5" />
+          <caret line="67" column="50" lean-forward="false" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+          <folding>
+            <marker date="1521525720740" expanded="true" signature="10:21" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="34:43" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="1650:1666" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="1739:1747" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="1793:1808" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="1854:1868" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="1914:1928" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="1986:2019" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="2100:2115" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="2100:2133" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="2217:2253" ph="..." />
+            <marker date="1521525720740" expanded="true" signature="3156:3160" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/viewcar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
+          <folding>
+            <marker date="1521525844722" expanded="true" signature="9:20" ph="..." />
+            <marker date="1521525844722" expanded="true" signature="32:41" ph="..." />
+            <marker date="1521525844722" expanded="true" signature="2274:2282" ph="..." />
+            <marker date="1521525844722" expanded="true" signature="2644:2659" ph="..." />
+            <marker date="1521525844722" expanded="true" signature="3020:3034" ph="..." />
+            <marker date="1521525844722" expanded="true" signature="3395:3409" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/editcar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="79" lean-forward="false" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+          <folding>
+            <element signature="e#1843#1869#0#HTML" expanded="true" />
+            <marker date="1521525758295" expanded="true" signature="10:21" ph="..." />
+            <marker date="1521525758295" expanded="true" signature="33:42" ph="..." />
+            <marker date="1521525758295" expanded="true" signature="592:610" ph="..." />
+            <marker date="1521525758295" expanded="true" signature="633:645" ph="..." />
+            <marker date="1521525758295" expanded="true" signature="720:728" ph="..." />
+            <marker date="1521525758295" expanded="true" signature="1353:1368" ph="..." />
+            <marker date="1521525758295" expanded="true" signature="1721:1735" ph="..." />
+            <marker date="1521525758295" expanded="true" signature="2091:2105" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_07_093037_create_cars_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="304">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OnlinecabbookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="310" column="0" lean-forward="true" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
           <folding />
         </state>
       </provider>

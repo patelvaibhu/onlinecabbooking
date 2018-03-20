@@ -141,7 +141,7 @@ class OnlinecabbookingController extends Controller
             'pickup_date'=>$request['pickup_date'],
             'pickup_address'=>$request['pickup_address'],
             'drop_address'=>$request['drop_address'],
-            'car_id'=>$request['car_id'],
+            'id'=>$request['car_id'],
             'price'=>$request['price'],
             'driver_id'=>$request['driver_id'],
             'payment_status'=>$request['payment_status'],
@@ -298,6 +298,27 @@ class OnlinecabbookingController extends Controller
         return redirect('newpassenger');
     }
 
+    public  function updatecar(Request $request)
+    {
+
+        // dd($request);
+        $car=Car::find($request->car_id);
+
+        $car->city_name=$request->city_name;
+        $car->location=$request->location;
+        $car->datetime=$request->datetime;
+        $car->save();
+
+        return redirect('car');
+//            return redirect('{{route('car')}});
+//        dd($car);
+
+//        $user = User::where ("username","rok"); // note that this shortcut is available if the comparison is =
+//        $new_user_data = array('city_name'=>$request->city_name);
+//$user->fill($new_user_data);
+//$user->save();
+    }
+
     public function order()
     {
         $orderData=Order::get();
@@ -388,12 +409,19 @@ class OnlinecabbookingController extends Controller
     }
     public function viewcar($id)
     {
-        $car=Car::where('car_id',$id)->first();
+        $car=Car::where('id',$id)->first();
         return view('viewcar',['car'=>$car]);
+    }
+
+    public function editcar($id)
+    {
+        //dd($id);
+        $car=Car::where('id',$id)->first();
+        return view('editcar',['car'=>$car]);
     }
     public function distroycar($id)
     {
-        $car=Car::where('car_id',$id)->delete();
+        $car=Car::where('id',$id)->delete();
         return redirect('car');
     }
 

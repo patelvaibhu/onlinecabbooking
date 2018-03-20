@@ -14,7 +14,7 @@ class CreateCarsTable extends Migration
     public function up()
     {
         Schema::create('cars', function (Blueprint $table) {
-            $table->increments('car_id');
+            $table->increments('id');
             $table->string('city_name');
             $table->string('location');
             $table->date('datetime');
