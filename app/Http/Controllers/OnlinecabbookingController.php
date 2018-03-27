@@ -141,7 +141,7 @@ class OnlinecabbookingController extends Controller
             'pickup_date'=>$request['pickup_date'],
             'pickup_address'=>$request['pickup_address'],
             'drop_address'=>$request['drop_address'],
-            'id'=>$request['car_id'],
+            'car_id'=>$request['car_id'],
             'price'=>$request['price'],
             'driver_id'=>$request['driver_id'],
             'payment_status'=>$request['payment_status'],
@@ -310,13 +310,8 @@ class OnlinecabbookingController extends Controller
         $car->save();
 
         return redirect('car');
-//            return redirect('{{route('car')}});
-//        dd($car);
 
-//        $user = User::where ("username","rok"); // note that this shortcut is available if the comparison is =
-//        $new_user_data = array('city_name'=>$request->city_name);
-//$user->fill($new_user_data);
-//$user->save();
+
     }
 
     public function order()
@@ -329,6 +324,45 @@ class OnlinecabbookingController extends Controller
         return view('neworder');
     }
 
+    public  function updateorder(Request $request)
+    {
+
+
+       //dd($request);
+        $data=array(
+          'pickup_city'=> $request->pickup_city,
+          'drop_city'=> $request->drop_city,
+          'pickup_date'=> $request->pickup_date,
+          'pickup_address'=> $request->pickup_address,
+          'drop_address'=> $request->drop_address,
+          'car_id'=> $request->car_id,
+          'price'=> $request->price,
+          'driver_id'=> $request->driver_id,
+          'payment_status'=> $request->payment_status,
+        );
+
+        $order = Order::where('order_id',$request->order_id)->update($data);
+
+        //$order->pickup_city = $request->pickup_city;
+        //$order->drop_city = $request->drop_city;
+       // $order->pickup_date = $request->pickup_date;
+        //$order->pickup_address = $request->pickup_address;
+       // $order->drop_address = $request->drop_address;
+       // $order->car_id = $request->car_id;
+//        $order->price = $request->price;
+//        $order->driver_id = $request->driver_id;
+//        $order->payment_status = $request->payment_status;
+       // $order->save();
+
+        return redirect('order');
+    }
+    public function editorder($id)
+    {
+        //dd($id);
+        $order = Order::where('order_id',$id)->first();
+
+        return view('editorder',['order'=>$order]);
+    }
     public function car()
     {
         $car=Car::get();
@@ -352,6 +386,36 @@ class OnlinecabbookingController extends Controller
     {
         $passenger=Passenger::where('passenger_id',$id)->first();
         return view('viewpassenger',['passenger'=>$passenger]);
+    }
+    public function editpassenger($id)
+    {
+        //dd($id);
+        $passenger = Passenger::where('passenger_id',$id)->first();
+        return view('editpassenger',['passenger'=>$passenger]);
+    }
+
+    public  function updatepassenger(Request $request)
+    {
+        //dd($request);
+
+        $data=array(
+            'full_name'=> $request->full_name,
+            'birth_date'=> $request->birth_date,
+            'email'=> $request->email,
+            'password'=> $request->password,
+            'address'=> $request->address,
+            'contact_no'=> $request->contact_no,
+
+        );
+
+        $passenger = Passenger::where('passenger_id',$request->passenger_id)->update($data);
+
+
+
+        //dd($driver);
+
+
+        return redirect('passenger');
     }
     public function distroypassenger($id)
     {
@@ -386,6 +450,37 @@ class OnlinecabbookingController extends Controller
         return redirect('driver');
     }
 
+    public function editdriver($id)
+    {
+        //dd($id);
+        $driver = Driver::where('driver_id',$id)->first();
+        return view('editdriver',['driver'=>$driver]);
+    }
+
+    public  function updatedriver(Request $request)
+    {
+       //dd($request);
+
+        $data=array(
+            'full_name'=> $request->full_name,
+            'license_no'=> $request->license_no,
+            'adharcard_no'=> $request->adharcard_no,
+            'election_card'=> $request->election_card,
+            'address'=> $request->address,
+            'city'=> $request->city,
+            'contact_no'=> $request->contact_no,
+
+        );
+
+        $driver = Driver::where('driver_id',$request->driverid)->update($data);
+
+
+
+        //dd($driver);
+
+
+        return redirect('driver');
+    }
     public function viewpayment($id)
     {
         $payment=Payment::where('payment_id',$id)->first();
@@ -460,11 +555,46 @@ class OnlinecabbookingController extends Controller
         return view('viewinquiry',['inquiry'=>$inquiry]);
     }
 
+    public  function updateinquiry(Request $request)
+    {
+        //dd($request);
+
+        $data=array(
+            'passenger_name'=> $request->passenger_name,
+            'email'=> $request->email,
+            'contact_no'=> $request->contact_no,
+            'message'=> $request->message,
+
+        );
+
+        $inquiry = Inquiry::where('inquiry_id',$request->inquiry_id)->update($data);
+
+
+
+//        $inquiry->passenger_name = $request->passenger_name;
+//        $inquiry->email = $request->email;
+//        $inquiry->contact_no = $request->contact_no;
+//        $inquiry->message = $request->message;
+//
+//        $inquiry->save();
+
+        return redirect('inquiry');
+    }
+
     public function distroyinquiry($id)
     {
         $inquiry=Inquiry::where('inquiry_id',$id)->delete();
         return redirect('inquiry');
     }
+
+    public function editinquiry($id)
+    {
+        //dd($id);
+        $inquiry =Inquiry::where('inquiry_id',$id)->first();
+
+        return view('editinquiry',['inquiry'=>$inquiry]);
+    }
+
 
     public function paymentstore(Request $request)
     {

@@ -1,10 +1,4 @@
-
-                {{--<label>Tolltax</label>--}}
-                {{--<input type="text" class="form-control"  name="tolltax" id="usr" placeholder="Toll Tax">--}}
-                    {{--<div align="center">--}}
-                        {{--<button type="submit" class="btn btn-info">ADD PLAN</button>--}}
-
-            @extends('adminmain')
+ @extends('adminmain')
 
             @section('content')
                 <!-- Content Wrapper. Contains page content -->
@@ -12,13 +6,13 @@
                     <!-- Content Header (Page header) -->
                     <section class="content-header">
                         <h1>
-                            Order
-                            <small>Order Details</small>
+                            Plan
+                            <small>plan Details</small>
                         </h1>
                         <ol class="breadcrumb">
                             <li><a href="adminindex"><i class="fa fa-dashboard"></i> Home</a></li>
-                            <li><a href="order"><i class="fa fa-dashboard"></i>Order</a></li>
-                            <li class="active">Welcome Order</li>
+                            <li><a href="order"><i class="fa fa-dashboard"></i>plan</a></li>
+                            <li class="active">Welcome plan</li>
                         </ol>
                     </section>
 

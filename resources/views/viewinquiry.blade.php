@@ -12,7 +12,7 @@
         <section class="content-header">
             <h1>
                 <i class=" glyphicon glyphicon-shopping-cart"></i>
-                Order
+                View Inquiry
                 <small>advanced tables</small>
             </h1>
             <ol class="breadcrumb">

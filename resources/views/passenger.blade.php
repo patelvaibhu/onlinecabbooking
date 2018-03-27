@@ -54,7 +54,7 @@
                                 <td>{{$passenger->contact_no}}</td>
 
                                 <td><a href="{{route('viewpassenger',['id'=>$passenger->passenger_id])}}"> <i class="fa fa-eye"></i></a>&nbsp;&nbsp;&nbsp;
-                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{route('editpassenger',['id'=>$passenger->passenger_id])}}"><i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
                                     <a href="{{route('distroypassenger',['id'=>$passenger->passenger_id])}}"> <i class="fa fa-trash"></i></a></td>
                             </tr>
                                 @endforeach

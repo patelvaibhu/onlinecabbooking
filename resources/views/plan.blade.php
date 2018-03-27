@@ -31,7 +31,7 @@
                             <h3 class="box-title">PLAN</h3>
                         </div>
                         <div align="">
-                            <a href="adminuser"><button type="button" class="btn btn-primary btn-lg">PLAN</button></a>
+                            <a href="adminplan"><button type="button" class="btn btn-primary btn-lg">PLAN</button></a>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">

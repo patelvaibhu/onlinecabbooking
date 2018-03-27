@@ -60,7 +60,7 @@
                                 <td>{{$driver->contact_no}}</td>
 
                                 <td> <a href="{{route('viewdriver',['id'=>$driver->driver_id])}}"><i class="fa fa-eye"></i>&nbsp;&nbsp;&nbsp;</a>
-                                    <i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{route('editdriver',['id'=>$driver->driver_id])}}"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;&nbsp;
                                     <a href="{{route('distroydriver',['id'=>$driver->driver_id])}}"> <i class="fa fa-trash"></i></a></td>
 
                             </tr>

@@ -27,7 +27,7 @@
                         <h3 class="box-title">Data Table With Full Features</h3>
                     </div>
                     <div align="">
-                        <a href="adminuser"><button type="button" class="btn btn-primary btn-lg">PAYMENT</button></a>
+                        <a href="addpayment"><button type="button" class="btn btn-primary btn-lg">PAYMENT</button></a>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
@@ -50,7 +50,7 @@
 
                                 <td> <a href="{{route('viewpayment',['id'=>$payment->payment_id])}}"> <i class="fa fa-eye"></i> </a>&nbsp;&nbsp;
                                     <i class="fa fa-pencil"></i>&nbsp;&nbsp;
-                                    <a href="{{route('distroyplan',['id'=>$payment->payment_id])}}"><i class="fa fa-trash"></i></td>
+                                    <a href="{{route('distroyplan',['id'=>$payment->payment_id])}}"><i class="fa fa-trash"></i></a></td>
                             </tr>
                                 @endforeach
                             </tbody>

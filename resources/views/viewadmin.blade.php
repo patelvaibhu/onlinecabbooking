@@ -8,7 +8,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                City
+                View ADMIN
                 <small>it all starts here</small>
             </h1>
             <ol class="breadcrumb">
@@ -43,9 +43,10 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>CITY NAME</th>
-                                        <th>LOCATION</th>
-                                        <th>DATE TIME</th>
+                                        <th>ADMIN_NAME</th>
+                                        <th>EMAIL</th>
+                                        <th>PASSWORD</th>
+                                        <th>CONTACT_NO</th>
                                     </tr>
                                     </thead>
 

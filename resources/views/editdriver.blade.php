@@ -18,7 +18,8 @@
         </section>
 
         <section class="content">
-            <form method="post" action="{{Route('driverstore')}}">
+            <form method="post" action="{{Route('updatedriver')}}">
+                <input type="hidden" name="driverid" id="driverid" value="{{$driver->driver_id}}">
                 {{csrf_field()}}
                 <div class="container">
                     <div class="row">
@@ -30,31 +31,31 @@
                                 <form>
                                     <div class="form-group" style="font-size: x-large">
                                         <label>Full Name</label>
-                                        <input type="text" placeholder="Full Name" name="full_name" class="form-control" style="font-size: large">
+                                        <input type="text" placeholder="Full Name" name="full_name" class="form-control" style="font-size: large" value="{{$driver->full_name}}">
                                     </div>
                                     <div class="form-group" style="font-size: x-large">
                                         <label>License No</label>
-                                        <input type="text" placeholder="License No" name="license_no" class="form-control" style="font-size: large">
+                                        <input type="text" placeholder="License No" name="license_no" class="form-control" style="font-size: large" value="{{$driver->license_no}}">
                                     </div>
                                     <div class="form-group" style="font-size: x-large">
                                         <label>Adharcard No</label>
-                                        <input type="text" placeholder="Adharcard No" name="adharcard_no" class="form-control" style="font-size: large">
+                                        <input type="text" placeholder="Adharcard No" name="adharcard_no" class="form-control" style="font-size: large" value="{{$driver->adharcard_no}}">
                                     </div>
                                     <div class="form-group" style="font-size: x-large">
                                         <label>Election Card</label>
-                                        <input type="text" placeholder="Election Card" name="election_card" class="form-control" style="font-size: large">
+                                        <input type="text" placeholder="Election Card" name="election_card" class="form-control" style="font-size: large" value="{{$driver->election_card}}">
                                     </div>
                                     <div class="form-group" style="font-size: x-large">
                                         <label>Address</label>
-                                        <input type="text" placeholder="Address" name="address" class="form-control" style="font-size: large">
+                                        <input type="text" placeholder="Address" name="address" class="form-control" style="font-size: large" value="{{$driver->address}}">
                                     </div>
                                     <div class="form-group" style="font-size: x-large">
                                         <label>City</label>
-                                        <input type="text" placeholder="City" name="city" class="form-control" style="font-size: large">
+                                        <input type="text" placeholder="City" name="city" class="form-control" style="font-size: large" value="{{$driver->city}}">
                                     </div>
                                     <div class="form-group" style="font-size: x-large">
                                         <label>Contact_No</label>
-                                        <input type="text" placeholder="Contact No" name="contact_no" class="form-control" style="font-size: large">
+                                        <input type="text" placeholder="Contact No" name="contact_no" class="form-control" style="font-size: large" value="{{$driver->contact_no}}">
                                     </div>
                                     <div align="center" >
                                         <button type="submit" class="btn btn-primary btn-lg">DRIVER</button>

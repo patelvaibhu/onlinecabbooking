@@ -7,13 +7,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Order
-                <small>Order Details</small>
+                Passenger
+                <small>Passenger Details</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="adminindex"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="order"><i class="fa fa-dashboard"></i>Order</a></li>
-                <li class="active">Welcome Order</li>
+                <li><a href=""><i class="fa fa-dashboard"></i>Passenger</a></li>
+                <li class="active">Welcome passenger</li>
             </ol>
         </section>
 
